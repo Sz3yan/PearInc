@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: scroll;
+  font-size: 20px;
+  color: black;
+}
+
+li {
+  display: inline;
+  color:black
+}    
+.container {
+	width: 1300px; 
+	height: 1000px;
+	margin: auto;
+	text-align: center;
+}
+.company-name {
+	color: black;
+}
+
+.phone-img, .pear-icon{
+	display: block;
+	margin: auto;
+}
+
+.pear-icon {
+	position: relative;
+	top: -360px;
+}
+
+.easy-nav {
+	position: absolute;
+	top: 760px;
+	left: 600px;
+	display: flex;
+	justify-content: space-evenly;
+	width: 500px;
+	text-decoration: underline;
+}
+
+
+.heading-pearphone {
+	font-size:55px;
+	text-align: center;
+}
+.slogan {
+	font-size:25pt;
+	text-align: center;
+}
+.info {
+	position:relative; 
+	top: 500px;
+}
