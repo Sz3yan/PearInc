@@ -31,25 +31,22 @@ li {
 }
 
 .easy-nav {
-	position: absolute;
-	top: 760px;
-	left: 600px;
+	position: relative;
 	display: flex;
+	bottom:60px;
 	justify-content: space-evenly;
-	width: 500px;
 	text-decoration: underline;
+	font-size: 25px;
+	color: darkmagenta;
 }
 
 
 .heading-pearphone {
-	font-size:55px;
 	text-align: center;
 }
 .slogan {
-	font-size:25pt;
 	text-align: center;
 }
-.info {
+.Info {
 	position:relative; 
-	top: 500px;
 }
