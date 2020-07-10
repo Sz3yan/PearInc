@@ -1,15 +1,8 @@
 body {
-  margin: 0px;
-  padding: 0px;
   overflow: scroll;
-  font-size: 20px;
   color: black;
 }
-
-li {
-  display: inline;
-  color:black
-}    
+   
 .container {
 	width: 1300px; 
 	height: 1000px;
@@ -39,7 +32,6 @@ li {
 	font-size: 25px;
 	color: darkmagenta;
 }
-
 
 .heading-pearphone {
 	text-align: center;
