@@ -1,58 +1,56 @@
-body {
-    background-image: url("../img-pearinc/support.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
 
-  .search-questions {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 15px;
-  }
 
-  .search-questions, form {
-      position: relative;
-      width: 100%;
-      max-width: 780px;
-      margin: auto;
-      top: 50%;
-  }
+main {
+    height: 300px;
+}
 
-  .input-field input{
-      height: 100%;
-      width: 100%;
-      padding: 17px 32px 17px 70px;
-      color: black;
-      background: linear-gradient(to right, #2c6dd5 0%, #2c6dd5 28%, #ff4b5a 91%, #ff4b5a 100%);
-      font-size: 18px;
-  }
+.search-questions {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
 
-  .input-field input::placeholder{
-      color: black;
-      font-weight: 400;
-      font-size: 18px;
-  }
+.search-questions, form {
+    position: relative;
+    width: 100%;
+    max-width: 780px;
+    margin: auto;
+    top: 50%;
+}
 
-  .basic-search {
-      box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-      overflow: hidden;
-      border-radius: 34px;
-      margin-bottom: 5px;
-  }
+.input-field input{
+    height: 100%;
+    width: 100%;
+    padding: 17px 32px 17px 70px;
+    color: black;
+    background: linear-gradient(to right, #2c6dd5 0%, #2c6dd5 28%, #ff4b5a 91%, #ff4b5a 100%);
+    font-size: 18px;
+}
 
-  .adv-search {
-      position: relative;
-      top: 10px;
-      width: 100%;
-      background-color: whitesmoke;
-      padding: 40px;
-      box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-      border-radius: 10px;
-      height: 300px;
-  }
+.input-field input::placeholder{
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+}
 
-  .role-self {
-      margin-bottom: 20px;
-  }
+.basic-search {
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    border-radius: 34px;
+    margin-bottom: 5px;
+}
+
+.adv-search {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 40px;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    height: 300px;
+}
+
+.role-self {
+    margin-bottom: 20px;
+}
