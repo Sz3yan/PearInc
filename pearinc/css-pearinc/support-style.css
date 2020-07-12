@@ -1,7 +1,36 @@
-
-
 main {
     height: 300px;
+}
+
+.container1 {
+    position: relative;
+    padding: 0 55px;
+}
+
+.content-top {
+    display: flex;
+    margin-bottom: 5em;
+}
+
+.greeting {
+    margin-right: 150px;
+}
+
+.greeting h1 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.quick-search {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    background-color: pink;
+}
+
+.content-mid  {
+    background-color: #f1f1f2;
+    height: 500px;
 }
 
 .search-questions {

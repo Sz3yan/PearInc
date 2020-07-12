@@ -1,7 +1,7 @@
 * {
-    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-    font-size: 18px;
-    font-weight: 400;
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-size: 20px;
+  font-weight: 400;
 }
 
 a {
@@ -9,66 +9,301 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
-  padding: 0 0 20px 0;
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 .container1 {
-  width: 80%;
-  margin: auto;
+  position: relative;
+  padding: 0 55px;
 }
 
-.header-section {
-  width: 100%;
+.header-wrap {
+  min-height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header-wrap,
+.header-nav nav,
+.header-nav nav > ul + ul {
   display: flex;
   align-items: center;
-  height: 100px;
-  justify-content: center;
 }
 
-.header-toggle {
-  display: none;
-  width: 20px;
-  height: 30px;
-
+.header-logo {
+  display: inline-block;
+  margin-right: 40px;
+  flex: 1 0 auto;
 }
 
-#menuToggle {
- display: none;
- position: absolute;
- right: 50px;
+.header-logo .is-logo, .header-logo .no-logo {
+  margin: 0;
 }
 
-#menuToggle input{
-  opacity: 0;
+.header-logo .no-logo {
+  font-size: 30px;
+  line-height: 1.1;
+  display: inline-block;
+  max-width: 250px;
 }
 
-#menuToggle span {
- display: block;
- width: 33px;
- height: 4px;
- margin-bottom: 5px;
- position: relative;
- background: #cdcdcd;
- border-radius: 3px;
+.header-nav {
+  position: relative;
+  z-index: 99;
+  flex: 0 1 100%;
+}
+
+.header-nav nav {
+  width: 100%;
+  padding: 0;
 }
 
 .header-nav nav ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
-.header-nav li {
+.header-nav nav > ul {
+  flex-grow: 1;
+}
+
+.header-nav nav > ul + ul {
+  flex: 0 0 auto;
+}
+
+.header-nav li, .header-nav a {
   display: inline-block;
 }
 
 .header-nav a {
-  margin: 0 30px 0 0;
+  font-size: 16px;
+  position: relative;
+  margin: 0 20px 0 0;
   padding: 5px 0 7px;
   text-decoration: none;
-  font-weight: 500;
+  letter-spacing: -0.3px;
+  font-weight:500;
+}
+
+.header-nav a::before {
+  position: absolute;
+  top: 5px;
+  right: -6px;
+  width: 6px;
+  height: 6px;
+  content: '';
+  transition-timing-function: ease;
+  transition-duration: .3s;
+  transition-property: background-color, opacity;
+  border-radius: 7px;
+}
+
+
+.header-nav a:hover::before {
+  opacity: .3;
+  background-color: grey;
+}
+
+.header-nav a.is-active:hover::before {
+  opacity: 1;
+}
+
+.header-search span {
+  display: none;
+}
+
+.header-search svg {
+  width: 17px;
+  cursor: pointer;
+}
+
+.header-checkbox, .header-checkbox:checked, .header-toggle {
+  display: none;
+}
+
+.header-toggle {
+  position: relative;
+  z-index: 99;
+  overflow: visible;
+  width: 20px;
+  height: 25px;
+  margin: 0;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.header-toggle > span {
+  position: relative;
+  top: 50%;
+}
+
+.header-toggle > span,
+.header-toggle .bar {
+  display: block;
+  width: 100%;
+}
+
+.header-toggle .bar {
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  content: '';
+  transition: transform .3s cubic-bezier(.645, .045, .355, 1), top .3s cubic-bezier(.645, .045, .355, 1) .2s;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.header-toggle .bar:nth-child(1) {
+  top: -10px;
+}
+
+.header-toggle .bar:nth-child(3) {
+  top: 10px;
+}
+
+.header-checkbox:checked ~ label .bar {
+  transition: transform .3s cubic-bezier(.645, .045, .355, 1) .3s, top .3s cubic-bezier(.645, .045, .355, 1);
+}
+
+.header-checkbox:checked ~ label .bar:nth-child(1),
+.header-checkbox:checked ~ label .bar:nth-child(3) {
+  top: 0;
+}
+
+.header-checkbox:checked ~ label .bar:nth-child(1),
+.header-checkbox:checked ~ label .bar:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.header-checkbox:checked ~ label .bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.header-checkbox:checked ~ nav {
+  position: absolute;
+  z-index: 98;
+  top: -10px;
+  right: -10px;
+  display: none;
+  max-width: 300px;
+  background-color: whitesmoke;
+}
+
+.header-checkbox:checked ~ nav ul {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 60px 0 60px 15px;
+  list-style: none;
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, .4);
+}
+
+@media (max-width:1024px) {
+  .header-logo {
+     margin-right: 0;
+  }
+
+  .header-logo,
+  .header-nav {
+     flex-basis: 50%;
+  }
+
+  .header-nav {
+     text-align: right;
+  }
+
+  .header-toggle {
+     display: inline-block;
+  }
+
+  .header-nav nav > ul,
+  .header-nav nav > ul + ul {
+     display: none;
+  }
+
+  .header-nav ul > li {
+     display: block;
+  }
+
+  .header-nav a {
+     line-height: 1.3;
+     margin-right: 8px;
+     padding: 5px 10px 5px 0;
+     word-break: break-word;
+  }
+
+  .header-nav a::before {
+     top: 4px;
+     right: 2px;
+  }
+
+  .header-checkbox:checked ~ nav {
+     display: flex;
+     max-width: 220px;
+     padding-top: 15px;
+     padding-bottom: 50px;
+     border-radius: var(--border-radius);
+     box-shadow: 0 15px 45px -10px rgba(0, 0, 0, .3);
+     flex-wrap: wrap;
+  }
+
+  .header-checkbox:checked ~ nav ul {
+     box-sizing: border-box;
+     width: 100%;
+     padding-top: 0;
+     padding-bottom: 0;
+     box-shadow: none;
+  }
+
+  .header-checkbox:checked ~ nav ul + ul {
+     padding-top: 20px;
+     padding-right: 18px;
+     padding-bottom: 10px;
+  }
+
+  .header-checkbox:checked ~ nav ul + ul a {
+     font-size: 15px;
+     line-height: 1;
+     margin: 0 0 10px;
+     padding: 14px 18px;
+  }
+
+  .header-search {
+     position: absolute;
+     right: 0;
+     bottom: -50px;
+     left: 0;
+     box-sizing: border-box;
+     width: 100%;
+     height: 50px;
+     padding: 17px 18px 0 0;
+     cursor: pointer;
+     border-radius: 0 0 var(--border-radius) var(--border-radius);
+     background-color: var(--color-details);
+  }
+
+  .header-search span {
+     font-size: 16px;
+     display: inline-block;
+     margin-right: 8px;
+     color: var(--color-font-three);
+  }
+
+  .header-search svg {
+     width: 15px;
+     margin-bottom: -2px;
+     fill: var(--color-font-three);
+  }
+
+  .header-nav-dropdown svg {
+     display: none;
+  }
+
 }
 
 @media (max-width: 1024px) {
@@ -142,7 +377,6 @@ ul {
 .footer-section {
   position: relative;
   top: 1000px;
-  background-color: whitesmoke;
 }
 
 .footer-logo {
