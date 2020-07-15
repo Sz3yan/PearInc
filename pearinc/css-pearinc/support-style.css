@@ -1,85 +1,30 @@
-main {
-    height: 300px;
+.content-heading a {
+    font-size: 24px;
 }
 
-.container1 {
-    position: relative;
-    padding: 0 55px;
+.pear-team-color {
+    color: #FF4747;
 }
 
-.content-top {
-    display: flex;
-    margin-bottom: 5em;
+.pear-products-color {
+    color: #3498DB;
 }
 
-.greeting {
-    margin-right: 150px;
+.content-heading {
+    margin-bottom: 2em;
 }
 
-.greeting h1 {
-    font-weight: 700;
-    font-size: 2em;
+.faq {
+    background-image: url(../img-pearinc/content1bg.jpg)
 }
 
-.quick-search {
+.category {
+    background-image: url(../img-pearinc/content3bg.jpg)
+}
+
+.faq, .category {
     width: 100%;
-    margin: auto;
-    justify-content: center;
-    background-color: pink;
-}
-
-.content-mid  {
-    background-color: #f1f1f2;
-    height: 500px;
-}
-
-.search-questions {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-}
-
-.search-questions, form {
-    position: relative;
-    width: 100%;
-    max-width: 780px;
-    margin: auto;
-    top: 50%;
-}
-
-.input-field input{
-    height: 100%;
-    width: 100%;
-    padding: 17px 32px 17px 70px;
-    color: black;
-    background: linear-gradient(to right, #2c6dd5 0%, #2c6dd5 28%, #ff4b5a 91%, #ff4b5a 100%);
-    font-size: 18px;
-}
-
-.input-field input::placeholder{
-    color: black;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.basic-search {
-    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    border-radius: 34px;
-    margin-bottom: 5px;
-}
-
-.adv-search {
-    position: relative;
-    top: 10px;
-    width: 100%;
-    background-color: whitesmoke;
-    padding: 40px;
-    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    height: 300px;
-}
-
-.role-self {
-    margin-bottom: 20px;
+    height: 60vh;
+    padding: 60px;
+    margin-bottom: 2em;
 }
