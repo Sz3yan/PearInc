@@ -1,30 +1,222 @@
-.content-heading a {
-    font-size: 24px;
-}
+/* //////////////////////////////////////////////////////////////////////////
 
-.pear-team-color {
-    color: #FF4747;
-}
+   Pear Inc by Sze Yan, Eden, Elton and Soloman (updated as of 16 July)
 
-.pear-products-color {
-    color: #3498DB;
-}
+   //////////////////////////////////////////////////////////////////////////
 
-.content-heading {
-    margin-bottom: 2em;
-}
+   I. Structure of support-style.css
+   |
+   ├─ 1. support-top
+   ├─ 2. search-box (within the top section)
+   ├─ 3. support team
+   ├─ 4. contact
+   ├─ 5. faq
+   ├─ 6. subscription
 
-.faq {
-    background-image: url(../img-pearinc/content1bg.jpg)
-}
+   
+   //////////////////////////////////////////////////////////////////////////
+     
+    /* --------------------------------------------------------------------------
+        1. support-top
+    -------------------------------------------------------------------------- */
 
-.category {
-    background-image: url(../img-pearinc/content3bg.jpg)
-}
+    .support-top {
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 2em;
+    }
 
-.faq, .category {
-    width: 100%;
-    height: 60vh;
-    padding: 60px;
-    margin-bottom: 2em;
-}
+    .heading {
+        text-align: center;
+    }
+
+    .quick-links {
+        max-width: 500px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .link1 h4 , .link2 h4 {
+        color: #0031D6;
+    }
+
+
+    /* --------------------------------------------------------------------------
+        2. search-box (place within the support-top section
+    -------------------------------------------------------------------------- */
+
+    .search-box {
+        background-image: url(../img-pearinc/support2.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        max-width: 1200px;
+        height: 750px;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    .col-md-8 {
+        text-align: center;
+    }
+
+    .col-md-1 a, .col-md-8 a {
+        color: #898989;
+        opacity: 0.05;
+    }
+
+    .cluster-left {
+        padding-left: 50px;
+    }
+
+    .cluster-right {
+        padding-right: 50px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 300px;
+        border: 0;
+        height: 50px;
+        padding: 8px;
+        outline: none;
+    }
+
+    /* --------------------------------------------------------------------------
+        3. support team
+    -------------------------------------------------------------------------- */
+
+    .support-team {
+        max-width: 1200px;
+        height: 380px;
+        display: flex;
+        margin: auto;
+        margin-bottom: 3em;
+    }
+
+    .support-team:hover {
+        transform: translate(0, -0.5px);
+        box-shadow: 8px 6px 25px 8px rgba(0,0,0,.08);
+    }
+
+    .support-team:hover:after {
+        transform: translate(0);
+    }
+
+    .logo-title {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .logo-title h1 {
+        padding-left: 2em;
+    }
+
+    .support-team-content {
+        padding-top: 50px;
+        max-width: 500px;
+    }
+
+    /* --------------------------------------------------------------------------
+        4. contact
+    -------------------------------------------------------------------------- */
+
+    .contact {
+        max-width: 1200px;
+        height: 500px;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 3em;
+        
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 15%;
+    }
+
+    .contact-left:hover, .contact-right:hover {
+        transform: translate(0, -0.5px);
+        box-shadow: 8px 6px 25px 8px rgba(0,0,0,.08);
+        background-color: #3498db;
+    }
+
+    .contact-left:hover:after, .contact-right:hover:after {
+        transform: translate(0);
+    }
+
+
+    /* --------------------------------------------------------------------------
+        5. faq
+    -------------------------------------------------------------------------- */
+
+    .faq {
+        max-width: 1200px;
+        height: 500px;
+        margin: auto;
+    }
+
+    .faq-bottom {
+        display: flex;
+        max-width: 1000px;
+        justify-content: space-evenly;
+    }
+
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible {
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+    }
+    
+    /* Style the collapsible content. Note: hidden by default */
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+    }
+
+    /* --------------------------------------------------------------------------
+        6. subscribe
+    -------------------------------------------------------------------------- */
+
+    .subscription {
+        max-width: 100%;
+        height: 379px;
+        margin: auto;
+        background-color: #3498db;
+        display: flex;
+        align-items: center;
+    }
+
+    .subscription-heading {
+        max-width: 900px;
+        padding: 64px;
+    }
+
+    .subscription-heading h1, .subscription-heading h3 {
+        color: white;
+    }
+
+    .subscription-form-1 input[type="email"] {
+        min-width: 270px;
+        border: 0;
+        height: 50px;
+        padding: 8px;
+        outline: none;
+    }
+
+    .subscription-form-1 button {
+        height: 50px;
+        background-color: white;
+        border: 0; 
+
+    }
+
+
+/*

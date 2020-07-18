@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css-pearinc/pearphone-style.css">
         <link rel="stylesheet" href="css-pearinc/standard.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <meta charset="UTF-8">
         <style>
@@ -17,7 +18,7 @@
         </style>
     </head>
 
-    <body style="color:black; background-color: #ffffd3">
+    <body style="color:black; background-color: beige">
         <div class="global-container">
             <header class="header-section">
                 <div class="header-wrap">
@@ -25,7 +26,7 @@
                         <h1 class="is-logo"><a href="PearInc.html"><img src="../pearinc/img-pearinc/pear-logo.png" alt="Pear Logo" width="35%"></a></h1>
                     </div>
                     <div class="header-nav">
-                        <input id="toggle" class="header-checkbox" type="checkbox">
+                        <input class="header-checkbox" id="toggle" type="checkbox">
                         <label class="header-toggle" for="toggle">
                             <span>
                                 <span class="bar"></span>
@@ -37,21 +38,26 @@
                             <ul>
                                 <li><a href="pearbook.html">PearBook</a></li>
                                 <li><a href="pearnote.html">PearNote</a></li>
-                                <li><a class="is-active" href="pearphone.html">PearPhone</a></li>
+                                <li><a href="pearphone.html">PearPhone</a></li>
                                 <li><a href="accessories.html">Accessories</a></li>
-                                <li><a href="support.html">Support</a></li>
+                                <li><a class="is-active" href="support.html">Support</a></li>
                                 <li><a href="bag.html">Bag</a></li>
                             </ul>
     
                             <ul>
-                                <li id="search-open" class="header-search"><span>Search</span><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.063 16.384l4.325 4.323c.391.392.63.924.611 1.475-.032.926-.646 1.649-1.68 1.736-.551.046-1.086-.22-1.476-.61l-4.325-4.325c-1.706 1.131-4.034 1.895-6.08 1.893C4.673 20.875 0 16.202 0 10.438 0 4.673 4.673 0 10.438 0c5.764 0 10.437 4.673 10.437 10.438 0 2.127-.718 4.294-1.812 5.945v.001zm-8.625 1.032c3.839 0 6.997-3.161 6.997-7 0-3.84-3.16-7-6.999-7-3.84 0-7.001 3.16-7.001 7 0 3.839 3.161 6.998 7.001 6.998l.002.002z"/></svg></li>
+                                <li id="search-open" class="header-search">
+                                    <span>Search</span>
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.063 16.384l4.325 4.323c.391.392.63.924.611 1.475-.032.926-.646 1.649-1.68 1.736-.551.046-1.086-.22-1.476-.61l-4.325-4.325c-1.706 1.131-4.034 1.895-6.08 1.893C4.673 20.875 0 16.202 0 10.438 0 4.673 4.673 0 10.438 0c5.764 0 10.437 4.673 10.437 10.438 0 2.127-.718 4.294-1.812 5.945v.001zm-8.625 1.032c3.839 0 6.997-3.161 6.997-7 0-3.84-3.16-7-6.999-7-3.84 0-7.001 3.16-7.001 7 0 3.839 3.161 6.998 7.001 6.998l.002.002z"/>
+                                    </svg>
+                                </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </header>
     
-            <div class="container text-center">
+            <main>
         
                 <br/>
                 
@@ -63,12 +69,178 @@
                     <a href="#here" class="find">Find out more</a>
                     <span class="Add">Add to bag</span>
                 </div>
+				
+				<span style="font-size:25pt;font-family: Gotham;font-weight:bold">HIGHLIGHTS</span>
+				<div class="containercard">
+						<div class="card">
+	   						<h3 class="titlecard">Design</h3>
+    						<div class="bar">
+								<a href="#Display" style="color:lightgrey">
+      							Find out more
+      							<div class="filledbar"></div>
+								</a>
+    						</div>
+    						<div class="circle">
+      							<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      								<circle class="stroke" cx="60" cy="60" r="50"/>
+    							</svg>
+    						</div>
+  						</div>
+  						<div class="card">
+ 							<h3 class="titlecard">Camera</h3>
+    						<div class="bar">
+								<a href="#Camera" style="color:lightgrey">
+								Find out more
+      							<div class="filledbar"></div>  
+								</a>
+							</div>
+    						<div class="circle">
+      							<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      								<circle class="stroke" cx="60" cy="60" r="50"/>
+    							</svg>
+   	 						</div>
+  						</div>
+  						<div class="card">
+    						<h3 class="titlecard">Performance</h3>
+    						<div class="bar">
+								<a href="#Performance" style="color:lightgrey">
+   		   						Find out more
+      							<div class="filledbar"></div>
+								</a>
+    						</div>
+    						<div class="circle">
+      							<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      								<circle class="stroke" cx="60" cy="60" r="50"/>
+    							</svg>
+    						</div>
+  						</div>
+  						<div class="card">
+    						<h3 class="titlecard">Specifications</h3>
+    						<div class="bar">
+								<a href="#Specifications" style="color:lightgrey">
+								Find out more
+      							<div class="filledbar"></div>
+								</a>
+    						</div>
+    						<div class="circle">
+      							<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+									<circle class="stroke" cx="60" cy="60" r="50"/>
+    							</svg>
+    						</div>
+  						</div>
+					
+				</div>
+				<div class="row">
+ 						<div class="column">
+  					 		<img src="img-pearinc/LG.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="100%" height="100%">
+  						</div>
+  						<div class="column">
+  					  		<img src="img-pearinc/Nokia.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" width="100%" height="100%">&nbsp; &nbsp; &nbsp; &nbsp;
+  						</div>
+					</div>
+					<div class="row">
+  						<div class="column">
+   					 		<img src="img-pearinc/Samsung.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" width="100%" height="100%">
+  						</div>
+  						<div class="column">
+   							<img src="img-pearinc/Bam.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" width="100%" height="100%">
+  						</div>
+					</div>
+				
 
-                <div>
-                    <a name="here" class="Info">Info goes here</a>
-                </div>
-            </div>
-    
+<!-- The Modal/Lightbox -->
+					<div id="myModal" class="modal">
+  					<span class="close cursor" onclick="closeModal()">&times;</span>
+  					<div class="modal-content">
+
+   						<div class="mySlides">
+     				 		<div class="numbertext">1 / 4</div>
+     				 		<img src="img-pearinc/LG.jpg" style="width:70%">
+   						</div>
+
+    					<div class="mySlides">
+     				 		<div class="numbertext">2 / 4</div>
+     				 		<img src="img-pearinc/Nokia.jpg" style="width:70%">
+   						</div>
+
+    					<div class="mySlides">
+      							<div class="numbertext">3 / 4</div>
+      							<img src="img-pearinc/Samsung.jpg" style="width:65%">
+    					</div>
+
+    					<div class="mySlides">
+    				  		<div class="numbertext">4 / 4</div>
+    				  		<img src="img-pearinc/Bam.jpg" style="width:80%">
+   						</div>
+
+    <!-- Next/previous controls -->
+    					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    					<div class="caption-container">
+     				 		<p id="caption"></p>
+    					</div>
+
+    <!-- Thumbnail image controls -->
+    					<div class="column">
+     						<img class="demo" src="img-pearinc/LG.jpg" onclick="currentSlide(1)" alt="Front">
+   						</div>
+
+    					<div class="column">
+      						<img class="demo" src="img-pearinc/Nokia.jpg" onclick="currentSlide(2)" alt="Back">
+    					</div>
+
+    					<div class="column">
+     						<img class="demo" src="img-pearinc/Samsung.jpg" onclick="currentSlide(3)" alt="Ports">
+    					</div>
+
+    					<div class="column">
+      						<img class="demo" src="img-pearinc/Bam.jpg" onclick="currentSlide(4)" alt="In action">
+    					</div>
+  					</div>
+				</div>
+					<script>
+						function openModal() {
+							document.getElementById("myModal").style.display = "block";
+						}
+
+						function closeModal() {
+							document.getElementById("myModal").style.display = "none";
+						}
+						var slideIndex = 1;
+						showSlides(slideIndex);
+						function plusSlides(n) {
+  							showSlides(slideIndex += n);
+						}
+						function currentSlide(n) {
+							showSlides(slideIndex = n);
+						}
+
+						function showSlides(n) {
+  						var i;
+  							var slides = document.getElementsByClassName("mySlides");
+  						var dots = document.getElementsByClassName("demo");
+						var captionText = document.getElementById("caption");
+							if (n > slides.length) {slideIndex = 1}
+							if (n < 1) {slideIndex = slides.length}
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";
+							}
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex-1].style.display = "block";
+							dots[slideIndex-1].className += " active";
+							captionText.innerHTML = dots[slideIndex-1].alt;
+						}
+					</script>
+	               
+				<a name="here" class="Info">Info goes here</a>
+				<a name="Display">Display</a>
+				</main>
+    		
+
             <footer class="footer-section">
                 <div class="container">
                     <div class="row">
