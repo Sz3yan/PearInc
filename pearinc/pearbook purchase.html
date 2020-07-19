@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="author" content="Sze Yan">
+        <meta name="author" content="Eden">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bag</title>
+        <title>PearBook</title>
+        <link href="../pearinc/css-pearinc/pearbook-style.css" rel="stylesheet">
+        <link rel="stylesheet" href="../pearinc/css-pearinc/pearbook-style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-        <link rel="stylesheet" href="css-pearinc/bag-style.css">
-        <link rel="stylesheet" href="css-pearinc/standard.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <meta charset="UTF-8">
+		<link rel="stylesheet" href="css-pearinc/standard.css">
+
     </head>
 
     <body>
-        <div class="global-container">
-            <header class="header-section">
+		<div class="global-container">
+			<!--Nav Bar-->
+			<header class="header-section">
                 <div class="header-wrap">
                     <div class="header-logo">
                         <h1 class="is-logo"><a href="PearInc.html"><img src="../pearinc/img-pearinc/pear-logo.png" alt="Pear Logo" width="35%"></a></h1>
                     </div>
-
                     <div class="header-nav">
                         <input id="toggle" class="header-checkbox" type="checkbox">
                         <label class="header-toggle" for="toggle">
@@ -29,22 +30,20 @@
                                 <span class="bar"></span>
                             </span>
                         </label>
-
                         <nav>
                             <ul>
-                                <li><a href="pearbook.html">PearBook</a></li>
+                                <li><a class="is-active" href="pearbook.html">PearBook</a></li>
                                 <li><a href="pearnote.html">PearNote</a></li>
                                 <li><a href="pearphone.html">PearPhone</a></li>
                                 <li><a href="accessories.html">Accessories</a></li>
                                 <li><a href="support.html">Support</a></li>
-                                <li>
-                                    <a class="is-active" href="bag.html">
-                                        <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5zM1 4v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4H1z"/>
-                                            <path d="M8 1.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
-                                        </svg>
-                                    </a>
-                                </li>
+                                <li><a href="bag.html">
+										<svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" d="M14 5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5zM1 4v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4H1z"/>
+											<path d="M8 1.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+										</svg>
+									</a>
+								</li>
                             </ul>
     
                             <ul>
@@ -54,126 +53,17 @@
                     </div>
                 </div>
             </header>
-
-            <main>
-                <table class="table table-responsive">
-                    <tbody>
-                        <tr>
-                            <td class="product-details">
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="flip-card-front">
-                                            <img src="img-pearinc/bag.jpg" alt="bag" width="100%">
-                                        </div>
-
-                                        <div class="flip-card-back">
-                                            <table class="table-responsive">
-                                                <tbody>
-                                                    <tr>
-                                                        <img src="img-pearinc/FinalPearBook.jpg" alt="pearbook" width="30%"/>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-
-                            <td class="more-info" >
-                                <form action="" method="GET">
-                                    <table class="table table-hover">
-                                        <tbody>
-                                            <tr onclick="togglePopup1()">
-                                                <td>
-                                                    <h4>Delivery Details</h4>
-                                                    <div class="popup1" id="popup-1">
-                                                        <div class="overlay1">
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr onclick="togglePopup2()">
-                                                <td>
-                                                    <h4>Payment Information</h4>
-                                                    <div class="popup2" id="popup-2">
-                                                        <div class="overlay2">
-                                                            <h1></h1>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr onclick="togglePopup3()">
-                                                <td>
-                                                    <h4>Packaging</h4>
-                                                    <div class="popup3" id="popup-3">
-                                                        <div class="overlay3">
-                                                            <h1></h1>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr onclick="togglePopup4()">
-                                                <td>
-                                                    <h4>Donation</h4>
-                                                    <div class="popup4" id="popup-4">
-                                                        <div class="overlay4">
-                                                            <h1></h1>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <script>
-                                                function togglePopup1(){
-                                                    document.getElementById("popup-1").classList.toggle("active1");
-                                                }
-
-                                                function togglePopup2(){
-                                                    document.getElementById("popup-2").classList.toggle("active2");
-                                                }
-
-                                                function togglePopup3(){
-                                                    document.getElementById("popup-3").classList.toggle("active3");
-                                                }
-
-                                                function togglePopup4(){
-                                                    document.getElementById("popup-4").classList.toggle("active4");
-                                                }
-                                            </script>
-                                        </tbody>
-                                    </table>
-                                </form>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="subscription">
-                    <div class="subscription-heading">
-                        <div class="subscription-heading-text">
-                            <h1>Subscribe to Pear Snippets</h1>
-                            <h3>
-                                Every weekday an email newsletter with some tips and tricks, 
-                                review by our community, impacts we have change to the environment will be sent out
-                                (Email will have priority in contact us) 
-                            </h3>
-                        </div>
-                    </div>
-
-                    <div class="subscription-form">
-                        <form class="subscription-form-1" action="" method="GET">
-                            <input type="email" autocomplete="no" placeholder="Your email address"/>
-                            <button type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </main>
-    
-            <footer class="footer-section">
+			<!-- PearBook purchase page-->
+			<div class="container" >
+				
+			</div>
+			
+			
+			
+			
+			<!--footer-->
+			<footer class="footer-section">
+                <div class="container">
                     <div class="row">
                         <div class="col-md-3">
                             <a href="PearInc.html"><img src="../pearinc/img-pearinc/pear-logo.png" alt="logo" width="30%"></a>
@@ -186,7 +76,6 @@
 
                         <div class="col-md-2">
                             <h5>Products</h5>
-
                             <ul>
                                 <li><a href="pearbook.html">PearBook</a></li>
                                 <li><a href="pearnote.html">PearNote</a></li>
@@ -197,7 +86,6 @@
 
                         <div class="col-md-2">
                             <h5>Community</h5>
-
                             <ul>
                                 <li><a href="">Stories</a></li>
                                 <li><a href="">Changes</a></li>
@@ -208,7 +96,6 @@
 
                         <div class="col-md-2">
                             <h5>Services</h5>
-
                             <ul>
                                 <li><a href="">Contribution</a></li>
                                 <li><a href="">Trees Planted</a></li>
@@ -219,7 +106,6 @@
 
                         <div class="col-md-2">
                             <h5>Others</h5>
-
                             <ul>
                                 <li><a href="">Our History</a></li>
                                 <li><a href="">Believes</a></li>
@@ -243,8 +129,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </footer>
-        </div>
+		</div>
     </body>
 </html>
-

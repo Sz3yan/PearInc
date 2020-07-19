@@ -6,56 +6,145 @@
 
    I. Structure of bag-style.css
    |
-   ├─ 1. bag-top
-   ├─ 2. bag-cart
-   ├─ 3. support team
-   ├─ 4. contact
-   ├─ 5. faq
-   ├─ 6. subscription
+   ├─ 1. product-details
+   ├─ 2. more-info
+   ├─ 3. checkout
 
    
    //////////////////////////////////////////////////////////////////////////
      
     /* --------------------------------------------------------------------------
-        1. bag-top (heading)
+        1. product-details
     -------------------------------------------------------------------------- */
-
-    .bag-top {
-        max-width: 500px;
-        margin: auto;
-        margin-bottom: 2em;
+    
+    .product-details {
+        width: 1000px;
+        height: 700px;
     }
 
-    .heading {
+    .flip-card {
+        width: 100%;
+        height: 100%;
+    }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
         text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+      
+      .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+      }
+
+    @media (max-width: 1024px) {
+        .product-details {
+            width: 500px;
+            height: 500px;
+        }
     }
 
     /* --------------------------------------------------------------------------
-        2. bag-cart (place within the support-top section) (when user enters a keyword, the surround link that matches with it will be highlighted => user will then click on the link)*  *have yet to implement that part
+        2. more-info 
     -------------------------------------------------------------------------- */
 
-    .bag-cart {
-        max-width: 1400px;
-        height: 500px;
-        margin: auto;
-        margin-bottom: 2em;
-    }
-
-    .product-details {
-        display: flex;
-        max-width: 300px;
-    }
-
-    .product-description {
+    .more-info h4 {
         padding-left: 20px;
     }
 
+    .popup1 .overlay1,
+    .popup2 .overlay2,
+    .popup3 .overlay3,
+    .popup4 .overlay4 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 450px;
+        height: 300px;
+        background:whitesmoke;
+        display: none;
+    }
+      
+    .popup1.active1 .overlay1, 
+    .popup2.active2 .overlay2, 
+    .popup3.active3 .overlay3, 
+    .popup4.active4 .overlay4{
+        display: block;
+        margin: auto;
+    }
 
     /* --------------------------------------------------------------------------
-        3. check out (introduction of our team, support team is also the founder of Pear Inc)
+        3. checkout 
     -------------------------------------------------------------------------- */
 
-    
 
+    /* --------------------------------------------------------------------------
+        6. subscribe (to allow user to subscribe to our weekly newsletter for advertising purpose)
+    -------------------------------------------------------------------------- */
 
+    .subscription {
+        max-width: 100%;
+        height: 379px;
+        margin: auto;
+        background-color: #3498db;
+        display: flex;
+        align-items: center;
+    }
+
+    .subscription-heading {
+        max-width: 900px;
+        padding: 64px;
+    }
+
+    .subscription-heading h1, .subscription-heading h3 {
+        color: white;
+    }
+
+    /* will implement the search input animation */
+    .subscription-form-1 input[type="email"] {
+        max-width: 270;
+        border: 0;
+        height: 50px;
+        padding: 8px;
+        outline: none;
+        transition: width 0.4s ease-in-out;
+    }
+
+    .subscription-form-1 input[type="email"]:focus {
+        padding-right: 20px;
+    }
+
+    .subscription-form-1 button {
+        height: 50px;
+        background-color: white;
+        border: 0; 
+    }
+
+    .subscription-form-1 button:hover {
+        transform: translate(0, -0.5px);
+        box-shadow: 8px 6px 25px 8px rgba(0,0,0,.08);
+    }
 /*
