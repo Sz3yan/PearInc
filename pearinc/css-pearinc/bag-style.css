@@ -1,3 +1,61 @@
-body {
-    background-image: url(../img-pearinc/support.png);
-}
+/* //////////////////////////////////////////////////////////////////////////
+
+   Pear Inc by Sze Yan, Eden, Elton and Soloman (updated as of 19 July 1.35pm by Sze Yan)
+
+   //////////////////////////////////////////////////////////////////////////
+
+   I. Structure of bag-style.css
+   |
+   ├─ 1. bag-top
+   ├─ 2. bag-cart
+   ├─ 3. support team
+   ├─ 4. contact
+   ├─ 5. faq
+   ├─ 6. subscription
+
+   
+   //////////////////////////////////////////////////////////////////////////
+     
+    /* --------------------------------------------------------------------------
+        1. bag-top (heading)
+    -------------------------------------------------------------------------- */
+
+    .bag-top {
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    /* --------------------------------------------------------------------------
+        2. bag-cart (place within the support-top section) (when user enters a keyword, the surround link that matches with it will be highlighted => user will then click on the link)*  *have yet to implement that part
+    -------------------------------------------------------------------------- */
+
+    .bag-cart {
+        max-width: 1400px;
+        height: 500px;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    .product-details {
+        display: flex;
+        max-width: 300px;
+    }
+
+    .product-description {
+        padding-left: 20px;
+    }
+
+
+    /* --------------------------------------------------------------------------
+        3. check out (introduction of our team, support team is also the founder of Pear Inc)
+    -------------------------------------------------------------------------- */
+
+    
+
+
+/*

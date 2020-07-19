@@ -1,24 +1,21 @@
-body {
-	overflow: scroll;
+body{
+	overflow-x: hidden;
 	color: black;
-	background-image: url("../img-pearinc/pearnote.jpg");
+	background-image: url("../img-pearinc/pearnote.jpeg");
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-position-y: -100px;
+	background-position-y: 150px;
 }
 
 /*slogan font class*/
 .pearnote {
-	font-family: Courier, "New Times Roman", Helvetica, Times, "Courier New";
-	position: relative;
-	bottom: -225px;
-	right: -60px;
+	position: center;
 }
 
 /* header product name font class*/
 .alpha {
 	font-size: 70px;
-	color: Black;
+	color: black;
 }
 
 /*slogan first line size */
@@ -32,20 +29,9 @@ body {
 	font-size: 30px;
 }
 
-/* Font classes for pearnote grey link*/
 .delta {
-	color: rgb(32, 32, 32);
-	font-family: Copperplate, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace';
+	color: black;
 	position: relative;
-	left: 120px
-}
-
-.echo {
-	color: lightgrey;
-	font-family: Copperplate, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace';
-	position: relative;
-	top: -19px;
-	right: 80px
 }
 
 /*pearnote alignment class*/
@@ -55,4 +41,14 @@ body {
 	margin-right: auto;
 	width: 75%;
 	height:75%;
+}
+
+table, th, td {
+	width: 75%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 15px;
 }

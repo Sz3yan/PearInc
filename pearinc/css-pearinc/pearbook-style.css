@@ -1,14 +1,15 @@
+/* Text alignment for PearBook page */
 .pearbook {
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif" ;
 text-align: center;
 	align:center;
 	  
 }
-
+/* image center for Pearbook page */
 .Imagecenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 100%;
   height:75%;
 }

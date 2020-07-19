@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="author" content="Sze Yan">
-        <meta name="viewport" content="width:device-width, initial-scale:1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bag</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link rel="stylesheet" href="css-pearinc/bag-style.css">
@@ -19,6 +19,7 @@
                     <div class="header-logo">
                         <h1 class="is-logo"><a href="PearInc.html"><img src="../pearinc/img-pearinc/pear-logo.png" alt="Pear Logo" width="35%"></a></h1>
                     </div>
+
                     <div class="header-nav">
                         <input id="toggle" class="header-checkbox" type="checkbox">
                         <label class="header-toggle" for="toggle">
@@ -28,6 +29,7 @@
                                 <span class="bar"></span>
                             </span>
                         </label>
+
                         <nav>
                             <ul>
                                 <li><a href="pearbook.html">PearBook</a></li>
@@ -35,7 +37,14 @@
                                 <li><a href="pearphone.html">PearPhone</a></li>
                                 <li><a href="accessories.html">Accessories</a></li>
                                 <li><a href="support.html">Support</a></li>
-                                <li><a class="is-active" href="bag.html">Bag</a></li>
+                                <li>
+                                    <a class="is-active" href="bag.html">
+                                        <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M14 5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5zM1 4v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4H1z"/>
+                                            <path d="M8 1.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+                                        </svg>
+                                    </a>
+                                </li>
                             </ul>
     
                             <ul>
@@ -47,7 +56,80 @@
             </header>
 
             <main>
-                
+                <div class="bag-top">
+                    <div class="heading">
+                        <h1>Your Bag</h1>
+                    </div>
+                </div>
+
+                <form action="" method="GET">
+                    <div class="bag-cart">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+    
+                            <tbody>
+                                <tr>
+                                    <td class="product-details">
+                                        <img src="img-pearinc/FinalPearBook.jpg" alt="pearbook" width="100%">
+    
+                                        <p class="product-description">PearBook</p>
+                                    </td>
+                                    <td>S$1680</td>
+                                    <td>1</td>
+                                    <td>S$1680</td>
+                                </tr>
+    
+                                <tr>
+                                    <td class="product-details">
+                                        <img src="img-pearinc/FinalPearBook.jpg" alt="pearbook" width="100%">
+    
+                                        <p class="product-description">PearBook</p>
+                                    </td>
+                                    <td>S$1680</td>
+                                    <td>1</td>
+                                    <td>S$1680</td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                    </div>
+    
+                    <div class="checkout">
+                        <table class="table">
+                            <tr>
+                                <td>Subtotal</td>
+                                <td></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Shipping</td>
+                                <td></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Coupon code</td>
+                                <td></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Grand total</td>
+                                <td></td>
+                            </tr>
+    
+                            <tr>
+                                <td></td>
+                                <td><button type="submit">Check Out</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
             </main>
     
             <footer class="footer-section">
@@ -63,6 +145,7 @@
 
                         <div class="col-md-2">
                             <h5>Products</h5>
+
                             <ul>
                                 <li><a href="pearbook.html">PearBook</a></li>
                                 <li><a href="pearnote.html">PearNote</a></li>
@@ -73,6 +156,7 @@
 
                         <div class="col-md-2">
                             <h5>Community</h5>
+
                             <ul>
                                 <li><a href="">Stories</a></li>
                                 <li><a href="">Changes</a></li>
@@ -83,6 +167,7 @@
 
                         <div class="col-md-2">
                             <h5>Services</h5>
+
                             <ul>
                                 <li><a href="">Contribution</a></li>
                                 <li><a href="">Trees Planted</a></li>
@@ -93,6 +178,7 @@
 
                         <div class="col-md-2">
                             <h5>Others</h5>
+
                             <ul>
                                 <li><a href="">Our History</a></li>
                                 <li><a href="">Believes</a></li>

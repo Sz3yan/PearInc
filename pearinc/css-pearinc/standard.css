@@ -1,15 +1,11 @@
 /* //////////////////////////////////////////////////////////////////////////
-
    Pear Inc by Sze Yan, Eden, Elton and Soloman (updated as of 16 July)
-
    //////////////////////////////////////////////////////////////////////////
-
    I. Structure of standard.css
    |
    ├─ 1.Global
    ├─ 2.Header
    ├─ 3.Footer
-
    
    //////////////////////////////////////////////////////////////////////////
      
@@ -55,12 +51,12 @@
     }
 
     .MTC {
-      font-size: 70px
+      font-size: 70px;
     }
 
     /* Main Subtitle Caption */
     .MSC {
-      font-size: 40px
+      font-size: 40px;
     }
 
     /* Secondary Subtitle Caption */
@@ -73,7 +69,7 @@
       color: rgba(5,107,188,1.00);
       font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace';
       display: flex;
-      width:50% ;
+      width:60% ;
       justify-content: space-between;
       margin-left: auto;
       margin-right: auto;
@@ -404,3 +400,4 @@
     }
     
 /*
+

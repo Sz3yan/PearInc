@@ -1,6 +1,6 @@
 /* //////////////////////////////////////////////////////////////////////////
 
-   Pear Inc by Sze Yan, Eden, Elton and Soloman (updated as of 16 July)
+   Pear Inc by Sze Yan, Eden, Elton and Soloman (updated as of 19 July 1.35pm by Sze Yan)
 
    //////////////////////////////////////////////////////////////////////////
 
@@ -17,7 +17,7 @@
    //////////////////////////////////////////////////////////////////////////
      
     /* --------------------------------------------------------------------------
-        1. support-top
+        1. support-top (heading)
     -------------------------------------------------------------------------- */
 
     .support-top {
@@ -42,8 +42,10 @@
 
 
     /* --------------------------------------------------------------------------
-        2. search-box (place within the support-top section
+        2. search-box (place within the support-top section) (when user enters a keyword, the surround link that matches with it will be highlighted => user will then click on the link)*  *have yet to implement that part
     -------------------------------------------------------------------------- */
+
+    /* have yet to fix the responsive part */
 
     .search-box {
         background-image: url(../img-pearinc/support2.jpg);
@@ -55,15 +57,20 @@
         margin-bottom: 2em;
     }
 
+    .sb {
+        padding-top: 25%;
+    }
+
     .col-md-8 {
         text-align: center;
     }
 
-    .col-md-1 a, .col-md-8 a {
+    .col-md-2 a, .col-md-8 a {
         color: #898989;
         opacity: 0.05;
     }
 
+    /* To make it look like cluster */
     .cluster-left {
         padding-left: 50px;
     }
@@ -80,8 +87,14 @@
         outline: none;
     }
 
+    @media (max-width: 1024px) {
+        .sb {
+            padding-top: 10%;
+        }
+    }
+
     /* --------------------------------------------------------------------------
-        3. support team
+        3. support team (introduction of our team, support team is also the founder of Pear Inc)
     -------------------------------------------------------------------------- */
 
     .support-team {
@@ -90,6 +103,41 @@
         display: flex;
         margin: auto;
         margin-bottom: 3em;
+    }
+
+    .popup .overlay {
+        position: relative;
+        top: 0;
+        left: 5%;
+        width: 1200px;
+        height: 700px;
+        background:whitesmoke;
+        display: none;
+    }
+      
+    .popup.active .overlay{
+        display:block;
+    }
+
+    .overlay {
+        padding: 64px;
+        display: flex;
+        margin-bottom: 2em;
+    }
+
+    .overlay-heading {
+        max-width: 500px;
+    }
+
+    .header-image {
+        padding-top: 20%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .timeline, .map {
+        width: 100%;
+        height: 250px;
     }
 
     .support-team:hover {
@@ -117,7 +165,7 @@
     }
 
     /* --------------------------------------------------------------------------
-        4. contact
+        4. contact (to allow the user to quickly contact us base on either live chat or email us direectly)
     -------------------------------------------------------------------------- */
 
     .contact {
@@ -141,6 +189,7 @@
         transform: translate(0, -0.5px);
         box-shadow: 8px 6px 25px 8px rgba(0,0,0,.08);
         background-color: #3498db;
+        color: white;
     }
 
     .contact-left:hover:after, .contact-right:hover:after {
@@ -149,7 +198,7 @@
 
 
     /* --------------------------------------------------------------------------
-        5. faq
+        5. faq (if user do not wish to contact us first, they can view the frequently asked question section (FAQ) for more information about their quiries)
     -------------------------------------------------------------------------- */
 
     .faq {
@@ -182,7 +231,7 @@
     }
 
     /* --------------------------------------------------------------------------
-        6. subscribe
+        6. subscribe (to allow user to subscribe to our weekly newsletter for advertising purpose)
     -------------------------------------------------------------------------- */
 
     .subscription {
@@ -203,20 +252,28 @@
         color: white;
     }
 
+    /* will implement the search input animation */
     .subscription-form-1 input[type="email"] {
-        min-width: 270px;
+        max-width: 270;
         border: 0;
         height: 50px;
         padding: 8px;
         outline: none;
+        transition: width 0.4s ease-in-out;
+    }
+
+    .subscription-form-1 input[type="email"]:focus {
+        padding-right: 20px;
     }
 
     .subscription-form-1 button {
         height: 50px;
         background-color: white;
         border: 0; 
-
     }
 
-
+    .subscription-form-1 button:hover {
+        transform: translate(0, -0.5px);
+        box-shadow: 8px 6px 25px 8px rgba(0,0,0,.08);
+    }
 /*
