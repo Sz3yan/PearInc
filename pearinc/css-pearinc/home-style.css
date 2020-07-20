@@ -12,13 +12,14 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  height:50%;
+  width: 100%;
+  height:100%;
 }
-
+/* PearBook background */
 .PBbackground {
 	background-color: rgba(0,0,0,1);
 }
+
 
 .pearbookFOM { 
 	border-radius: 15px;
@@ -102,4 +103,30 @@ li {
   width: 1000px;
   margin: auto;
   justify-content: space-evenly;
+}
+
+.donation {
+  background-image: url(../img-pearinc/home1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+  margin-bottom: 2em;
+}
+
+.donation-wrapper, .trees-wrapper {
+  padding: 25px;
+}
+
+.col-md-6 p {
+  font-size: 16px;
+}
+
+.trees {
+  background-image: url(../img-pearinc/home2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+  margin-bottom: 2em;
 }
