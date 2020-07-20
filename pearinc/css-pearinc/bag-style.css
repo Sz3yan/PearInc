@@ -1,86 +1,92 @@
 /* //////////////////////////////////////////////////////////////////////////
-
    Pear Inc by Sze Yan, Eden, Elton and Soloman (updated as of 19 July 1.35pm by Sze Yan)
-
    //////////////////////////////////////////////////////////////////////////
-
    I. Structure of bag-style.css
    |
    ├─ 1. product-details
    ├─ 2. more-info
    ├─ 3. checkout
-
    
    //////////////////////////////////////////////////////////////////////////
      
     /* --------------------------------------------------------------------------
-        1. product-details
+        1. bag-top
     -------------------------------------------------------------------------- */
     
-    .product-details {
-        width: 1000px;
-        height: 700px;
+    .bag-top {
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 2em;
     }
 
-    .flip-card {
-        width: 100%;
-        height: 90%;
-    }
-      
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
+    .heading {
         text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    }
-      
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-      
-    .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-    }
-      
-    .flip-card-back {
-        background-color: #8ba0b5;
-        color: white;
-        transform: rotateY(180deg);
     }
 
-    .product1 td {
+    .quick-links {
+        max-width: 500px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .link1 h4 , .link2 h4 {
+        color: #0031D6;
+    }
+
+    .bag-count {
+        background-image: url(../img-pearinc/suggestion.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        max-width: 1200px;
+        height: 490px;
+        margin: auto;
+    }
+
+    .bag-count-header {
         position: relative;
-        right: 30%;
-    }
-
-    .shopping-cart {
-        padding: 20px;
-    }
-
-    @media (max-width: 1024px) {
-        .product-details {
-            width: 500px;
-            height: 500px;
-        }
-
-        .product1 td {
-            right: 20%;
-        }
+        left: 10%;
+        top: 40%;
     }
 
     /* --------------------------------------------------------------------------
-        2. more-info 
+        2. shopping-bag 
     -------------------------------------------------------------------------- */
 
-    .more-info h4 {
+    .shopping-bag {
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 2em;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .shopping-bag-left {
+        width: 800px;
+        height: 500px;
+    }
+
+    .shopping-bag-right {
+        width: 350px;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+
+    .product-details {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .description {
         padding-left: 20px;
+    }
+
+    .checkout {
+        width: 100%;
+        height: 200px;
     }
 
     .popup1 .overlay1,
@@ -91,7 +97,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 300px;
+        height: auto;
         background:whitesmoke;
         display: none;
     }
@@ -104,19 +110,15 @@
         margin: auto;
     }
 
-    .checkout {
-        margin-top: 380px;
-        width: 100%;
-    }
-
     /* --------------------------------------------------------------------------
-        4. subscribe (to allow user to subscribe to our weekly newsletter for advertising purpose)
+        3. subscribe (to allow user to subscribe to our weekly newsletter for advertising purpose)
     -------------------------------------------------------------------------- */
 
     .subscription {
-        max-width: 100%;
+        max-width: 1200px;
         height: 379px;
         margin: auto;
+        margin-bottom: 2em;
         background-color: #3498db;
         display: flex;
         align-items: center;

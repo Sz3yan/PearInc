@@ -143,6 +143,12 @@
         }
     }
 
+    @media (max-width: 736px) {
+        .support-team .pearteam {
+            display: none;
+        }
+    }
+
     /* --------------------------------------------------------------------------
         4. contact (to allow the user to quickly contact us base on either live chat or email us direectly)
     -------------------------------------------------------------------------- */
