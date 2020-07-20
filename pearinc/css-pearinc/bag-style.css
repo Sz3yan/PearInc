@@ -64,12 +64,12 @@
     }
 
     .shopping-bag-left {
-        width: 800px;
+        width: 600px;
         height: 500px;
     }
 
     .shopping-bag-right {
-        width: 350px;
+        width: 550px;
         padding-left: 50px;
         padding-top: 50px;
     }
@@ -106,6 +106,10 @@
     .popup5.active5 .overlay5{
         display: block;
         margin: auto;
+    }
+
+    h4 {
+        cursor: pointer;
     }
 
     /* --------------------------------------------------------------------------
