@@ -59,94 +59,124 @@
                 <table class="table table-responsive">
                     <tbody>
                         <tr>
-                            <td class="product-details">
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="flip-card-front">
-                                            <img src="img-pearinc/bag.jpg" alt="bag" width="100%">
-                                        </div>
+                            <form action="" method="GET">
+                                <td class="product-details">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="img-pearinc/bag.jpg" alt="bag" width="100%">
+                                            </div>
+    
+                                            <div class="flip-card-back">
+                                                <div class="container shopping-cart">
+                                                    <div class="row">
+                                                        <div class="col-md-4"><a href="pearbook.html"><img src="img-pearinc/FinalPearBook.jpg" alt="pearbook" width="100%"/></a></div>
+                                                        <div class="col-md-2">PearBook</div>
+                                                        <div class="col-md-2">1</div>
+                                                        <div class="col-md-2">S$1680</div>
+                                                    </div>
 
-                                        <div class="flip-card-back">
-                                            <table class="table-responsive">
-                                                <tbody>
-                                                    <tr>
-                                                        <img src="img-pearinc/FinalPearBook.jpg" alt="pearbook" width="30%"/>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                    <div class="row">&nbsp;</div>
+    
+                                                    <div class="row">
+                                                        <div class="col-md-4"><a href="pearphone.html"><img src="img-pearinc/pearphone.jpeg" alt="pearphone" width="100%"/></a></div>
+                                                        <div class="col-md-2">PearPhone</div>
+                                                        <div class="col-md-2">1</div>
+                                                        <div class="col-md-2">S$580</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
+                                </td>
+                            </form>
+                            
 
                             <td class="more-info" >
-                                <form action="" method="GET">
-                                    <table class="table table-hover">
-                                        <tbody>
-                                            <tr onclick="togglePopup1()">
-                                                <td>
-                                                    <h4>Delivery Details</h4>
-                                                    <div class="popup1" id="popup-1">
-                                                        <div class="overlay1">
-
-                                                        </div>
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr onclick="togglePopup1()">
+                                            <td>
+                                                <h4>Delivery Details</h4>
+                                                <div class="popup1" id="popup-1">
+                                                    <div class="overlay1">
+                                                        <ul>
+                                                            <li>Shipping will take around 2 to 3 days</li>
+                                                            <li>You will receive a sms once its 10 mins before the arrival</li>
+                                                            <li>Please note that there will be no delivery on Sunday. Monday will be the earliest delivery possible</li>
+                                                        </ul>
                                                     </div>
-                                                </td>
-                                            </tr>
+                                                </div>
+                                            </td>
+                                        </tr>
 
-                                            <tr onclick="togglePopup2()">
-                                                <td>
-                                                    <h4>Payment Information</h4>
-                                                    <div class="popup2" id="popup-2">
-                                                        <div class="overlay2">
-                                                            <h1></h1>
-                                                        </div>
+                                        <tr onclick="togglePopup2()">
+                                            <td>
+                                                <h4>Payment Information</h4>
+                                                <div class="popup2" id="popup-2">
+                                                    <div class="overlay2">
+                                                        <ul>
+                                                            <li>Payments can be made by credit or debit card, bank transfer, apple pay, google pay and samsung pay</li>
+                                                            <li>Accepted credit cards are Visa, American Express and Mastercard.</li>
+                                                            <li>For more information please refer to <a href="support.html">Pear Support</a></li>
+                                                        </ul>
                                                     </div>
-                                                </td>
-                                            </tr>
+                                                </div>
+                                            </td>
+                                        </tr>
 
-                                            <tr onclick="togglePopup3()">
-                                                <td>
-                                                    <h4>Packaging</h4>
-                                                    <div class="popup3" id="popup-3">
-                                                        <div class="overlay3">
-                                                            <h1></h1>
-                                                        </div>
+                                        <tr onclick="togglePopup3()">
+                                            <td>
+                                                <h4>Packaging</h4>
+                                                <div class="popup3" id="popup-3">
+                                                    <div class="overlay3">
+                                                        <ul>
+                                                            <li>All packaging materials will be made of 100% recyclable materials</li>
+                                                        </ul>
                                                     </div>
-                                                </td>
-                                            </tr>
+                                                </div>
+                                            </td>
+                                        </tr>
 
-                                            <tr onclick="togglePopup4()">
-                                                <td>
-                                                    <h4>Donation</h4>
-                                                    <div class="popup4" id="popup-4">
-                                                        <div class="overlay4">
-                                                            <h1></h1>
-                                                        </div>
+                                        <tr onclick="togglePopup4()">
+                                            <td>
+                                                <h4>Donation</h4>
+                                                <div class="popup4" id="popup-4">
+                                                    <div class="overlay4">
+                                                        <ul>
+                                                            <li>30% of the profit per transaction will be donated to one of the environmental organisation</li>
+                                                            <li>For more information please refer to <a href="support.html">Pear Support</a></li>
+                                                        </ul>
                                                     </div>
-                                                </td>
-                                            </tr>
+                                                </div>
+                                            </td>
+                                        </tr>
 
-                                            <script>
-                                                function togglePopup1(){
-                                                    document.getElementById("popup-1").classList.toggle("active1");
-                                                }
+                                        <script>
+                                            function togglePopup1(){
+                                                document.getElementById("popup-1").classList.toggle("active1");
+                                            }
 
-                                                function togglePopup2(){
-                                                    document.getElementById("popup-2").classList.toggle("active2");
-                                                }
+                                            function togglePopup2(){
+                                                document.getElementById("popup-2").classList.toggle("active2");
+                                            }
 
-                                                function togglePopup3(){
-                                                    document.getElementById("popup-3").classList.toggle("active3");
-                                                }
+                                            function togglePopup3(){
+                                                document.getElementById("popup-3").classList.toggle("active3");
+                                            }
 
-                                                function togglePopup4(){
-                                                    document.getElementById("popup-4").classList.toggle("active4");
-                                                }
-                                            </script>
-                                        </tbody>
-                                    </table>
-                                </form>
+                                            function togglePopup4(){
+                                                document.getElementById("popup-4").classList.toggle("active4");
+                                            }
+                                        </script>
+                                    </tbody>
+                                </table>
+
+                                <div class="checkout">
+                                    <div ckass="checkout-heading">
+                                        <h4>Subtotal: $2260</h4>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </tbody>

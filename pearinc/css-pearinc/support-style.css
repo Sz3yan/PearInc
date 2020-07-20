@@ -61,26 +61,8 @@
         padding-top: 25%;
     }
 
-    .col-md-8 {
-        text-align: center;
-    }
-
-    .col-md-2 a, .col-md-8 a {
-        color: #898989;
-        opacity: 0.05;
-    }
-
-    /* To make it look like cluster */
-    .cluster-left {
-        padding-left: 50px;
-    }
-
-    .cluster-right {
-        padding-right: 50px;
-    }
-
     .search-bar input[type="text"] {
-        width: 300px;
+        width: 500px;
         border: 0;
         height: 50px;
         padding: 8px;
@@ -109,8 +91,8 @@
         position: relative;
         top: 0;
         left: 0;
-        width: 1200px;
-        height: 2500px;
+        width: 100%;
+        height: 100%;
         background:whitesmoke;
         display: none;
     }
@@ -136,10 +118,6 @@
         box-shadow: 8px 6px 25px 8px rgba(0,0,0,.08);
     }
 
-    .support-team:hover:after {
-        transform: translate(0);
-    }
-
     .logo-title {
         display: flex;
         width: 100%;
@@ -153,6 +131,16 @@
     .support-team-content {
         padding-top: 50px;
         max-width: 500px;
+    }
+
+    @media (max-width: 1024px) {
+        .logo-title h1 {
+            font-size: 18px;
+        }
+
+        .support-team-content p, .cc p {
+            font-size: 15px;
+        }
     }
 
     /* --------------------------------------------------------------------------
@@ -216,9 +204,16 @@
     
     /* Style the collapsible content. Note: hidden by default */
     .content {
+        margin-top: 10px;
         padding: 0 18px;
         display: none;
         overflow: hidden;
+    }
+
+    @media (max-width: 1024px) {
+        .content p {
+            font-size: 15px;
+        }
     }
 
     /* --------------------------------------------------------------------------
@@ -227,7 +222,7 @@
 
     .subscription {
         max-width: 100%;
-        height: 379px;
+        height: 100%;
         margin: auto;
         background-color: #3498db;
         display: flex;
@@ -266,5 +261,20 @@
     .subscription-form-1 button:hover {
         transform: translate(0, -0.5px);
         box-shadow: 8px 6px 25px 8px rgba(0,0,0,.08);
+    }
+
+    @media (max-width: 1024px) {
+
+        .subscription-heading-text {
+            max-width: 400px;
+        }
+
+        .subscription-heading-text h1 {
+            font-size: 18px;
+        }
+
+        .subscription-heading-text h3 {
+            font-size: 15px;
+        }
     }
 /*
