@@ -1,15 +1,10 @@
 body{
 	overflow-x: hidden;
 	color: black;
-	background-image: url("../img-pearinc/pearnote.jpeg");
+	background-image: url("../img-pearinc/pearnote.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position-y: 150px;
-}
-
-/*slogan font class*/
-.pearnote {
-	position: center;
 }
 
 /* header product name font class*/
@@ -47,6 +42,7 @@ table, th, td {
 	width: 75%;
 	border: 1px solid black;
 	border-collapse: collapse;
+	table-layout: fixed;
 }
 
 th, td {
