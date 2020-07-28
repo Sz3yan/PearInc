@@ -48,19 +48,31 @@
         top: 40%;
     }
 
+    @media (max-width: 1024px) {
+        .bag-count-header {
+            top: 20%;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .bag-count {
+            display: none;
+        }
+    }
+
     /* --------------------------------------------------------------------------
         2. shopping-bag 
     -------------------------------------------------------------------------- */
 
     .shopping-bag {
-        width: 1200px;
+        max-width: 1200px;
         height: auto;
         margin: auto;
         margin-bottom: 2em;
         background-color: #f2f2f2;
         display: flex;
         justify-content: space-evenly;
-        padding-top: 200px;
+        padding: 5%;
     }
 
     .shopping-bag-left {
@@ -71,7 +83,6 @@
     .shopping-bag-right {
         width: 550px;
         padding-left: 50px;
-        padding-top: 50px;
     }
 
     .product-details {
@@ -112,22 +123,58 @@
         cursor: pointer;
     }
 
+    @media (max-width: 1024px) {
+        h4, li, .description p, span {
+            font-size: 15px;
+        }
+
+    }
+
+    @media (max-width: 500px) {
+        h4, 
+        li, 
+        span, 
+        a,
+        label,
+        div,
+        dl,
+        dt,
+        dd,
+        .popup1, 
+        .popup2, 
+        .popup3, 
+        .popup4,
+        .media p,
+        .well button {
+            font-size: 10px;
+        }
+
+        .shopping-bag {
+            display: block;
+        }
+
+        .shopping-bag-left, .shopping-bag-right {
+            max-width: 100%;
+            height: auto;
+            padding-left: 0;
+        }
+    }
+
     /* --------------------------------------------------------------------------
         3. subscribe (to allow user to subscribe to our weekly newsletter for advertising purpose)
     -------------------------------------------------------------------------- */
 
     .subscription {
         max-width: 1200px;
-        height: 379px;
+        height: 100%;
         margin: auto;
-        margin-bottom: 2em;
         background-color: #3498db;
         display: flex;
         align-items: center;
     }
 
     .subscription-heading {
-        max-width: 900px;
+        max-width: 850px;
         padding: 64px;
     }
 
@@ -172,6 +219,12 @@
 
         .subscription-heading-text h3 {
             font-size: 15px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .subscription {
+            display: none;
         }
     }
 /*

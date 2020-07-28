@@ -62,7 +62,7 @@
     }
 
     .search-bar input[type="text"] {
-        width: 500px;
+        max-width: 500px;
         border: 0;
         height: 50px;
         padding: 8px;
@@ -75,13 +75,19 @@
         }
     }
 
+    @media (max-width: 375px) {
+        .search-box {
+            display: none;
+        }
+    }
+
     /* --------------------------------------------------------------------------
         3. support team (introduction of our team, support team is also the founder of Pear Inc)
     -------------------------------------------------------------------------- */
 
     .support-team {
         max-width: 1200px;
-        height: 380px;
+        height: auto;
         display: flex;
         margin: auto;
         margin-bottom: 3em;
@@ -149,6 +155,17 @@
         }
     }
 
+    @media (max-width: 375px) {
+
+        .overlay {
+            padding: 10px;
+        }
+
+        .overlay p {
+            font-size: 10px;
+        }
+    }
+
     /* --------------------------------------------------------------------------
         4. contact (to allow the user to quickly contact us base on either live chat or email us direectly)
     -------------------------------------------------------------------------- */
@@ -181,6 +198,16 @@
         transform: translate(0);
     }
 
+    @media (max-width: 375px) {
+        .video-call h1, .mail h1 {
+            font-size: 15px;
+        }
+
+        .contact {
+            height: 200px;
+        }
+    }
+
 
     /* --------------------------------------------------------------------------
         5. faq (if user do not wish to contact us first, they can view the frequently asked question section (FAQ) for more information about their quiries)
@@ -188,7 +215,7 @@
 
     .faq {
         max-width: 1200px;
-        height: 500px;
+        height: 450px;
         margin: auto;
     }
 
@@ -220,6 +247,17 @@
         .content p {
             font-size: 15px;
         }
+    }
+
+    @media (max-width: 375px) {
+        .faq h1, .faq-top-3 button {
+            font-size: 15px;
+        }
+
+        .faq-top-3.content {
+            font-size: 10px;
+        }
+
     }
 
     /* --------------------------------------------------------------------------
@@ -281,6 +319,12 @@
 
         .subscription-heading-text h3 {
             font-size: 15px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .subscription {
+            display: none;
         }
     }
 /*

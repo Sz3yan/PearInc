@@ -1,0 +1,81 @@
+/* //////////////////////////////////////////////////////////////////////////
+
+   Pear Inc by Sze Yan, Eden, Elton and Soloman (updated as of 19 July 1.35pm by Sze Yan)
+
+   //////////////////////////////////////////////////////////////////////////
+
+   I. Structure of bag-process-style.css
+   |
+   ├─ 1. bag-process-top
+   ├─ 2. thanku
+   ├─ 3. findoutmore
+
+
+   
+   //////////////////////////////////////////////////////////////////////////
+     
+    /* --------------------------------------------------------------------------
+        1. bag-process-top (heading)
+    -------------------------------------------------------------------------- */
+
+    .bag-top {
+        background-image: url(../img-pearinc/suggestion.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        max-width: 1200px;
+        height: 490px;
+        margin: auto;
+    }
+
+    .bag-top-header {
+        position: relative;
+        left: 10%;
+        top: 30%;
+    }
+
+    .bag-top-header p:hover {
+        cursor: pointer;
+    }
+
+    /* --------------------------------------------------------------------------
+        2. thanku 
+    -------------------------------------------------------------------------- */
+
+    .popup .overlay {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f2f2f2;
+        display: none;
+    }
+      
+    .popup.active .overlay{
+        display: block;
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    .overlay {
+        padding: 64px;
+        display: flex;
+    }
+
+    /* --------------------------------------------------------------------------
+        3. findoutmore 
+    -------------------------------------------------------------------------- */
+
+    .findoutmore {
+        max-width: 1200px;
+        height: 490px;
+        margin: auto;
+        margin-bottom: 2em;
+        display: flex;
+        background-image: url(../img-pearinc/treess.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+/*
