@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="css-pearinc/support-style.css">
         <link rel="stylesheet" href="css-pearinc/standard.css">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <meta charset="UTF-8">
     </head>
 
@@ -109,6 +111,7 @@
                             </div>
 
                             <div class="support-team-content">
+                                <img class="pearteam-h" src="img-pearinc/pearsupportteam.jpeg" width="100%" alt="Pear Support Team"/><br/>
                                 <p>
                                     The Pear Support Team is constantly working tirelessly to 
                                     Provide you with the best customer experience one can 
@@ -235,63 +238,48 @@
                 <div class="faq" id="faa">
                     <h1>FAQ</h1>
 
-                    <div class="faq-top-3">
-                        <table class="table table-hover">
-                            <tr>
-                                <td>
-                                    <button class="collapsible btn-default">Why choose Pear Product</button>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse1">Why choose Pear Products</a>
+                                </h4>
+                            </div>
+                            
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">Pear Inc aims to promote awareness for the environment. Our products are Arsenic-free, 
+                                100% recyclable aluminium and many more. For any purchase of our Pear Product, 
+                                we will donate a portion of the profits to the World Wide Fund for Nature, 
+                                the United Nations Environment; just to name a few. By doing so, you will be 
+                                able to make a significant difference in keeping our 
+                                environment safe and ensure that future generations will be able to enjoy it.</div>
+                            </div>
+                        </div>
 
-                                    <div class="content">
-                                        <p>
-                                            Pear Inc aims to promote awareness for the environment. Our products are Arsenic-free, 
-                                            100% recyclable aluminium and many more. For any purchase of our Pear Product, 
-                                            we will donate a portion of the profits to the World Wide Fund for Nature, 
-                                            the United Nations Environment; just to name a few. By doing so, you will be 
-                                            able to make a significant difference in keeping our 
-                                            environment safe and ensure that future generations will be able to enjoy it.
-                                        </p>
-                                    </div>
-                                </td>
-                            </tr>
-    
-                            <tr>
-                                <td>
-                                    <button class="collapsible btn-default">What portion of money will be donated when I purchase a Pear Product</button>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse"  href="#collapse2">What portion of money will be donated when I purchase a Pear Product</a>
+                                </h4>
+                            </div>
 
-                                    <div class="content">
-                                        <p>30% of the profit per transaction will be donated fully to one of the organisation</p>
-                                    </div>
-                                </td>
-                            </tr>
-    
-                            <tr>
-                                <td>
-                                    <button class="collapsible btn-default">Can I donate more if I want to</button>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">30% of the profit per transaction will be donated fully to one of the organisation</div>
+                            </div>
+                        </div>
 
-                                    <div class="content">
-                                        <p>Yep. If you are donating more than $1000 and above, please email us and we will update you with the neccessary arrangment for you to do so</p>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse"  href="#collapse3">Can I donate more if I want to</a>
+                                </h4>
+                            </div>
 
-                    <script>
-                        var coll = document.getElementsByClassName("collapsible");
-                        var i;
-
-                        for (i = 0; i < coll.length; i++) {
-                        coll[i].addEventListener("click", function() {
-                            this.classList.toggle("active");
-                            var content = this.nextElementSibling;
-                            if (content.style.display === "block") {
-                            content.style.display = "none";
-                            } else {
-                            content.style.display = "block";
-                            }
-                        });
-                        }
-                    </script>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">Yep. If you are donating more than $1000 and above, please email us and we will update you with the neccessary arrangment for you to do so</div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
 
                 <div class="subscription">
