@@ -68,6 +68,27 @@
             </header>
 
 			<main>
+                <button onclick="topFunction()" id="GBTT" > back to top</button>
+				<script>
+						
+                    var mybutton = document.getElementById("GBTT");
+                    window.onscroll = function() {scrollFunction()};
+
+                    function scrollFunction() {
+                        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                        mybutton.style.display = "block";
+                        }	 	
+                        else {
+                        mybutton.style.display = "none";
+                          }
+                    }
+
+                    function topFunction() {
+                      document.body.scrollTop = 0;
+                      document.documentElement.scrollTop = 0;
+                    }
+                </script>
+                    
                 <div class="support-top">
                     <div class="heading">
                         <h1>Support</h1>
@@ -135,7 +156,7 @@
                                 </tr>
                             </thead>
 
-                            <tbody class="cc">
+                            <tbody>
                                 <tr>
                                     <td>
                                         <img src="img-pearinc/about1.png" alt="picture of 3" width="80%"/>
@@ -184,7 +205,7 @@
 
                                         <p>
                                             Furthermore, for every dollar we make, we promise to plant 1 trees
-                                            Back into the environment. We hope to hit 20 million trees by the
+                                            Back into the environment. We hope to hit <a href="#t" style="color: #3498db">20 million trees</a> by the
                                             End of 2025
                                         </p><br/>
 
@@ -204,7 +225,7 @@
 
                         <div class="timeline">
                             <h1>Timeline</h1>
-                            <embed src="img-pearinc/timeline.pdf" width="100%" height="100%">
+                            <embed src="img-pearinc/timeline.pdf" width="100%" height="500px">
                         </div>
                     </div>
 
@@ -221,7 +242,7 @@
                             <a href="https://zoom.us/join" target="_blank"><img src="img-pearinc/video-call.png" width="10%"/></a>
 
                             <h1>Live chat</h1>
-                            <h5>Avaliable all dau (including public holiday)</h5>
+                            <h5>Avaliable all day (including public holiday)</h5>
                         </div>
                     </div>
 

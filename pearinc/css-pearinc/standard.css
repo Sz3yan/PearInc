@@ -91,6 +91,27 @@
         padding-right: 55px;
       }
 
+      #GBTT {
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgba(5,107,188,1.00);
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      
+      #GBTT:hover {
+        background-color: rgba(40,58,85,1.00);
+      }
+      
+
     @media (max-width: 375px) {
       .global-container {
         max-width: 375px;

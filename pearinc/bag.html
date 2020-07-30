@@ -56,6 +56,26 @@
             </header>
 
             <main>
+              <button onclick="topFunction()" id="GBTT" > back to top</button>
+              <script>
+                var mybutton = document.getElementById("GBTT");
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                    mybutton.style.display = "block";
+                    }	 	
+                  else {
+                    mybutton.style.display = "none";
+                    }
+                  }
+
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                  }
+              </script>
+                          
                 <div class="bag-top">
                     <div class="heading">
                         <h1>Bag</h1>
@@ -79,7 +99,7 @@
                 <div class="bag-count">
                     <div class="bag-count-header">
                         <h1>Pear Products</h1>
-                        <a href="PearInc.html"><p>find out more ></p></a>
+                        <a href="PearInc.html"><p style="color: #3498db">find out more ></p></a>
                     </div>
                 </div>
 
@@ -129,7 +149,7 @@
                           <form action="bag-process.html" method="GET">
                             <tr>
                               <td>
-                                <h4 onclick="togglePopup1()">Delivery Details</h4>
+                                <h4 onclick="togglePopup1()" style="color:#3498db;">Delivery Details</h4>
 
                                 <div class="popup1" id="popup-1">
                                   <div class="overlay1">
@@ -153,7 +173,6 @@
                                               </dl>
 
                                               <button class="btn btn-sm">Edit</button>
-                                              <button class="btn btn-sm btn-link">Delete this address</button>
                                             </div>
 
                                           </div>
@@ -185,14 +204,20 @@
                                         <div class="col-md-3">
                                           <div class="form-group">
                                             <label for="inputZip">ZIP Code</label>
-                                            <input type="text" class="form-control form-control-small" id="inputZip" placeholder="Enter zip"/>
+                                            <input type="text" class="form-control form-control-small" id="inputZip" placeholder="Enter zip" minlength="6"/>
                                           </div>
                                         </div>
 
                                         <div class="col-md-9">
                                           <div class="form-group">
                                             <label for="inputCity">City</label>
-                                            <input type="text" class="form-control" id="inputCity" placeholder="Enter city">
+                                            <input type="text" class="form-control" list="inputCity" placeholder="Enter city">
+                                            <datalist id="inputCity">
+                                              <option>Singapore</option>
+                                              <option>Korean</option>
+                                              <option>Japan</option>
+                                              <option>USA</option>
+                                            </datalist>
                                           </div>
                                         </div>
                                       </div>
@@ -210,7 +235,7 @@
 
                             <tr>
                               <td>
-                                <h4 onclick="togglePopup2()">Payment Information</h4>
+                                <h4 onclick="togglePopup2()" style="color:#3498db;">Payment Information</h4>
                                   <div class="popup2" id="popup-2">
                                     <div class="overlay2">
                                       <ul>
@@ -246,7 +271,6 @@
                                                     </div>
                                                   </div>
                                                   <button class="btn btn-sm">Edit</button>
-                                                  <button class="btn btn-sm btn-link">Delete this card</button>
                                                 </div>
                                               </div>
                                           </div>
@@ -302,7 +326,7 @@
 
                             <tr>
                                 <td>
-                                    <h4 onclick="togglePopup3()">Packaging</h4>
+                                    <h4 onclick="togglePopup3()" style="color:#3498db;">Packaging</h4>
                                     <div class="popup3" id="popup-3">
                                         <div class="overlay3">
                                             <ul>
@@ -315,7 +339,7 @@
 
                             <tr>
                                 <td>
-                                    <h4 onclick="togglePopup4()">Donation</h4>
+                                    <h4 onclick="togglePopup4()" style="color:#3498db;">Donation</h4>
                                     <div class="popup4" id="popup-4">
                                         <div class="overlay4">
                                             <ul>

@@ -59,7 +59,16 @@
                 <div class="bag-top">
                     <div class="bag-top-header">
                         <h1>Purchased Products</h1>
-                    <p onclick="togglePopup()">Thank you for purchasing with us <br/> See what you have change ></p>
+                        <p onclick="togglePopup()">
+                            Thank you for purchasing with us <br/> 
+                            Order number # <span id="demo"></span><br/>
+                            
+                            <script>
+                            document.getElementById("demo").innerHTML =
+                            Math.floor(Math.random() * 1000000) + 1;
+                            </script>
+
+                            See what you have change ></p>
                     </div>
                 </div>
 
