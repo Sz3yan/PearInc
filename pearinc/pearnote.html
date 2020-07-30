@@ -47,6 +47,26 @@
             </header>
 			<div class="container">
 				<div class="pearnote">
+				<button onclick="topFunction()" id="GBTT" > back to top</button>
+					<script>
+						
+						var mybutton = document.getElementById("GBTT");
+						window.onscroll = function() {scrollFunction()};
+
+						function scrollFunction() {
+							if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    						mybutton.style.display = "block";
+							}	 	
+							else {
+    						mybutton.style.display = "none";
+  							}
+						}
+
+						function topFunction() {
+						  document.body.scrollTop = 0;
+						  document.documentElement.scrollTop = 0;
+						}
+					</script>
 					<h1 class="alpha">PearNote</h1>
 					<p class="beta">Incredible power. Incredible value</p>
 					<br/>
@@ -63,8 +83,9 @@
 						<p class="charlie">Work hard, play hard</p>
 						<p class="delta">
 						The PearNote is the device that will be of use to both students and CEOs alike.	<br/>
-						Though it is designed for two vastly different groups, it still performs equally.	<br/>
-						Crafted with a large screen, a masssive battery, numerous fantastic features		<br/>
+						With our new Pear Operating System 14 (pOS 14),	<br/>
+						users will have a whole new experience with our devices.	<br/>
+						Crafted with a large screen, a masssive battery, fantastic features,		<br/>
 						and a premium touch, it will surely satisfy the users' needs.</p>
 					</div>		<br/><br/><br/>
 					
@@ -78,21 +99,21 @@
 						<tr>
 							<td style="padding: 20px;" >
 								<div class="SSC" align="left">
-									Up to <span style="color: rgba(5,107,188,1.00)">32GB RAM</span></div>
+									Up to <span style="color: rgba(5,107,188,1.00)">12GB RAM</span></div>
 								<div align="left">
 									Allowing you to multitask	<br/>
 									without the cost of speed
 								</div>		<br/>
 								<div class="SSC" align="left">
-									Connect to a <span style="color: rgba(5,107,188,1.00)">PearPen</span></div>
+									Connect with a <span style="color: rgba(5,107,188,1.00)">PearPen</span></div>
 								<div align="left">
-									and let your ideas	<br/> 
-									go straight to your screen
+									and let your ideas travel	<br/> 
+									straight to your screen
 								</div>		<br/>
 								<div class="SSC" align="left">
 								<span style="color: rgba(5,107,188,1.00)">120Hz</span> Refresh rate</div>
 								<div align="left">
-									High refresh rate allows for	<br/>
+									High refresh rate allows	<br/>
 									a smoother experience 
 								</div>		<br/>
 							</td>
@@ -101,14 +122,14 @@
 								<div class="SSC" align="left">
 									Our <span style="color: rgba(5,107,188,1.00)">Pear P12Z chip</span></div>
 								<div align="left">
-									Makes it seem the high workloads	<br/> 
-									are a piece of cake
+									Makes the huge workloads	<br/> 
+									a piece of cake
 								</div>		<br/>
 								<div class="SSC" align="left">
 									 <span style="color: rgba(5,107,188,1.00)">9000 mAh</span> battery</div>
 								<div align="left">
-									Grants an all day battery life		<br/> 
-									no matter what
+									Long-lasting battery life		<br/> 
+									with 20W fast charging
 								</div>		<br/>
 								<div class="SSC" align="left">
 									Paired with <span style="color: rgba(5,107,188,1.00)">PearVoice</span></div>
@@ -123,10 +144,10 @@
 					<div>
 						<p class="charlie">Flawless screen</p>
 						<p class="delta">
-						The PearNote has a 12.9" screen with a resolution of 2048 × 2732 pixels respecting	<br/>
+						The PearNote has a 12.9" screen with a resolution of 2732 × 2048 pixels respecting	<br/>
 						a 4:3 aspect ratio, resulting a ~265 ppi density. Such a large screen allows reading	<br/>
 						and drawing much easier. Talking about art, it's an IPS LCD panel with 16M colours,		<br/>
-						making it great for video editing, sketching and everything in-between.	<br/>
+						making it great for video editing, sketching, and everything in-between.	<br/>
 						Paired with our PearPen, we will take your art game to the next level.</p>
 					</div>		<br/><br/><br/>
 					
@@ -149,30 +170,30 @@
 							</tr>
 							<tr>
 								<th>
-									<span class="SSC" Style="color:rgba(5,107,188,1.00);">Processor</span>
+									<span class="SSC" Style="color:rgba(5,107,188,1.00);">Chipset</span>
 									<br/>
-									 Pear P12X chipset
+									 Pear P12X
 								</th>
 							</tr>
 							<tr>
 								<th>
 									<span class="SSC" Style="color:rgba(5,107,188,1.00);">Display</span>
 									<br/>
-									12.9" 120 Hz IPS LCD 2048 × 2732 pixels 4:3 aspect ratio
+									12.9" 120 Hz IPS LCD 2732 × 2048 pixels by a 4:3 aspect ratio
 								</th>
 							</tr>
 							<tr>
 								<th>
 									<span class="SSC" Style="color:rgba(5,107,188,1.00);">Storage</span>
 									<br/>
-									128GB\ 256GB\ 1TB
+									128GB/ 256GB/ 512GB/ 1TB
 								</th>
 							</tr>
 							<tr>
 								<th>
 									<span class="SSC" Style="color:rgba(5,107,188,1.00);">Memory</span>
 									<br/> 
-									6GB RAM
+									6 GB/ 8 GB/ 12GB RAM
 								</th>
 							</tr>
 							<tr>
@@ -197,8 +218,8 @@
 									<span class="SSC" Style="color:rgba(5,107,188,1.00);">Audio</span>
 									<br/> 
 									<ul>
-										<li>2 stereo peakers</li>
-										<li>3.5mm audio jack</li>
+										<li>2 Stereo speakers</li>
+										<li>3.5mm Audio jack</li>
 										<li>Powered by Dolby Atmos</li>
 									</ul>
 								</th>
@@ -207,12 +228,22 @@
 								<th>
 									<span class="SSC" Style="color:rgba(5,107,188,1.00);">Colours</span>
 									<br/> 
-									Black, SIlver, Gold, Gray and White
+									Black, Gray, Silver, Gold, and White
 								</th>
 							</tr>
 							<tr>
 								<th>
-									<span class="SSC" Style="color:rgba(5,107,188,1.00);">Webcam</span>
+									<span class="SSC" Style="color:rgba(5,107,188,1.00);">Main Camera</span>
+									<br/> 
+									12 MP, f/1.8, 1/3", 1.22µm, dual pixel PDAF	(wide)	<br/>
+									10 MP, f/2.4, 11mm (ultrawide)		<br/>
+									Quad-LED dual-tone flash, HDR		<br/>
+									4K @ 30/60fps, 1080p @ 30/60/120/240fps; gyro-EIS
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<span class="SSC" Style="color:rgba(5,107,188,1.00);">Front Camera</span>
 									<br/> 
 									4K @ 60fps (no OIS/EIS), 4K @ 30fps, 1080p @ 30/60/240fps, 720p @ 960fps, HDR, stereo sound recording, gyro-EIS & OIS
 								</th>

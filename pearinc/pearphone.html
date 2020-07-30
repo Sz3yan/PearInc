@@ -18,7 +18,7 @@
         </style>
     </head>
 	
-    <body >
+    <body>
         <div class="global-container">
             <header class="header-section">
                 <div class="header-wrap">
@@ -67,12 +67,32 @@
             <main>
        		<br/>
               	<div class="container1">
+					<button onclick="topFunction()" id="GBTT" > back to top</button>
+					<script>
+						
+						var mybutton = document.getElementById("GBTT");
+						window.onscroll = function() {scrollFunction()};
+
+						function scrollFunction() {
+							if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    						mybutton.style.display = "block";
+							}	 	
+							else {
+    						mybutton.style.display = "none";
+  							}
+						}
+
+						function topFunction() {
+						  document.body.scrollTop = 0;
+						  document.documentElement.scrollTop = 0;
+						}
+					</script>
 					<div class="Pearphone">
                 		<h1 class="MTC">PearPhone</h1>
                 		<p class="MSC"> All you will ever need, on the go</p>
 						<br/>
 						<div class="TSC">
-							<div><a href="" class="easy-nav">Specifications &gt;</a></div>
+							<div><a href="#specs" class="easy-nav">Specifications &gt;</a></div>
 							<div><a href="" class="easy-nav">Buy &gt;</a></div>
 						</div>
 						<img src="img-pearinc/Pear-phone.png">
@@ -92,84 +112,106 @@
 					<br/>
 					<br/>
 					<br/>
-					<div>
 						<span class="MSC">Performance</span>
 						<div class="SSC">
-						Pearphone is equipped with everything you need. 
-						<br/>
-						From long battery life and snappy processors to large storage space
-						<br/>
-						and wireless compatibility.
+							Pearphone is equipped with everything you need. 
+							<br/>
+							From long battery life and snappy processors to large storage space
+							<br/>
+							and wireless compatibility.
 							<img src="img-pearinc/gaming.jpg" width="90%">
-						<br/>
-						<br/>
-						</div>
-						<div class="perf">
-							<div>Long battery life</div>
-							<div>Snappy processors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-						</div>
-						<div class="perfinfo">
-							<div>Pearphone learns your daily routine and power<br/> down apps you don't use for maximum efficiency.<br/> Make use of the improved power saving mode<br/> to use of the<b> 4100mAh</b> battery to the fullest
-							</div>
-							<div>With a Snapdragon 845 processor, enjoy using<br/> the <b>12GB</b> RAM to help your phone run smoothly when<br/> playing graphic-heavy games</div>
-						</div>
-						<br/>
-						<div class="perf">
-							<div>Large storage space</div>
-							<div>Fast wireless charging</div>
-						</div>
-						<div class="perfinfo">
-							<div>Delete what you want to, not because you have to.<br/> With an internal storage of 1TB on top of a 512GB<br/> microSD card gives arevolutionary <b>1.5TB</b> of storage</div>
-							<div>With a wireless charging compatibility, simply <br/>place your phone on a wireless charger and let it charge<br/> your phone at a <b>20%</b> increased rate.</div>
-						</div>
-						<br/>
-						<br/>
-						<br/>
-						<div>
-							<span class="MSC">Design</span>
-							<div class="SSC">
-								The next-generation smartphone,<br/>
-								designed to not just stand out, but stand apart
-							</div>
-							<img src="img-pearinc/Design1.jpg" width="90%">
 							<br/>
 							<br/>
-							<div class="perf">
-								<div>Crystal clear display</div>
-								<div>Fingerprint scanner&nbsp;&nbsp;</div>
+						</div>
+				  <div class="row">
+							<div class="col-md-6">
+								<span class="MSC" style="color:rgba(5,107,188,1.00);">Long battery life</span>
+								<div class="text1">
+									Pearphone learns your daily routine and power<br/> 
+									down apps you don't use for maximum efficiency.<br/> 
+									Make use of the improved power saving mode<br/> 
+									to use of the<b> 4100mAh</b> battery to the fullest.
+								</div>
 							</div>
-							<div class="perfinfo">
-								<div> 
+							<div class="col-md-6">
+								<span class="MSC" style="color:rgba(5,107,188,1.00);">Snappy processors</span>
+								<div class="text1">
+									With a Snapdragon 845 processor, enjoy using<br/>
+									the <b>12GB</b> RAM to help your phone run smoothly when<br/>
+									playing graphic-heavy games.
+								</div>
+					</div>
+						</div>
+						<br/>
+						<div class="row">
+							<div class="col-md-6">
+								<span class="MSC" style="color:rgba(5,107,188,1.00);">Large storage space</span>
+								<div class="text1">
+									Delete what you want to, not because you have to.<br/> 
+									With an internal storage of 1TB on top of a 512GB<br/> 
+									microSD card gives arevolutionary <b>1.5TB</b> of storage
+								</div>
+							</div>
+							<div class="col-md-6">
+								<span class="MSC" style="color:rgba(5,107,188,1.00);">Fast wireless charging</span>
+								<div class="text1">
+									With a wireless charging compatibility, simply <br/>
+									place your phone on a wireless charger and let it charge<br/> 
+									your phone at a <b>20%</b> increased rate.
+								</div>
+							</div>
+						</div>
+						<br/>
+						<br/>
+						<br/>
+						<span class="MSC">Design</span>
+						<div class="SSC">
+							The next-generation smartphone,<br/>
+							designed to not just stand out, but stand apart
+						</div>
+						<img src="img-pearinc/Design1.jpg" width="90%">
+						<br/>
+						<br/>
+						<div class="row">
+							<div class="col-md-6">
+								<span class="MSC" style="color:rgba(5,107,188,1.00);">Crystal clear display</span>
+								<div class="text1">
 									With the latest <b>AMOLED</b> screen, expect top-tier real<br/>
 									color and contrast in each scene - including dark ones<br/>
 									Make use of the brighter screen for use in bright daylight<br/>
 									and the <b>blue-light filter</b> at night for eye comfort
 								</div>
-								<div>
+							</div>
+							<div class="col-md-6">
+								<span class="MSC" style="color:rgba(5,107,188,1.00);">Fingerprint scanner</span>
+								<div class="text1">
 									With a built-in fingerprint scanner, it makes it so that<br/>
 									only you can access your phone. <b>Secure and convinient</b>,<br/>
 									with just a quick tap you can hop straight into using it.
 								</div>
 							</div>
-							<br/>
-							<div class="perf">
-								<div>Materials selected for <br/> more comfort</div>
-								<div>IP68 Water and Dust <br/> Resistance</div>
-							</div>
-							<div class="perfinfo">
-								<div>
+						</div>
+						<br/>
+						<div class="row">
+							<div class="col-md-6">
+								<span class="MSC" style="color:rgba(5,107,188,1.00);">Materials selected for more comfort</span>
+								<div class="text1">
 									With a nice glossy look with vibrant prismatic colors, on<br/>
 									top of a <b>durable and comfortable</b> ceramic finish makes <br/>
 									for an <b>easy-to-handle</b> phone. The Gorilla Glass 6 display <br/>
 									makes PearPhone withstand the rigours of daily usage.
 								</div>
-								<div>
+							</div>
+							<div class="col-md-6">
+								<span class="MSC" style="color:rgba(5,107,188,1.00);">IP68 Water and Dust Resistance</span>
+								<div class="text1">
 									With an IP68 water and dust resistant, you don't have<br/>
 									to get worried of your PearPhone when you drop it in <br/>
 									water. Being able to resist up to <b>1.5m</b> of depth for <b>30 mins</b>,<br/>
 									never get punished for your mistakes again.
 								</div>
 							</div>
+						</div>
 						<br/>
 						<br/>
 						<br/>
@@ -182,65 +224,75 @@
 							<img src="img-pearinc/Camerafront.jpg" width="90%">
 							<br/>
 							<br/>
-							<div class="perf">
-								<div>Adjustable scenes</div>
-								<div>Shot suggestion&nbsp;&nbsp;&nbsp;</div>
-							</div>
-							<div class="perfinfo">
-							  <div>
-									Take any scene to suit your liking by <b>manually</b><br/>
-									<b>adjusting</b> the settings such as ISO, shutter speed <br/>
-									and exposure level to your heart's content.
-							</div>
-								<div>
-									You don't need to be an expert to take a shot. Use<br/>
-									the ever helpful shot suggestion to take the <b>best shot</b><br/>
-									you need.
+							<div class="row">
+								<div class="col-md-6">
+									<span class="MSC" style="color:rgba(5,107,188,1.00);">Adjustable scenes</span>
+									<div class="text1">
+										Take any scene to suit your liking by <b>manually</b><br/>
+										<b>adjusting</b> the settings such as ISO, shutter speed <br/>
+										and exposure level to your heart's content.
+									</div>
+								</div>
+								<div class="col-md-6">
+									<span class="MSC" style="color:rgba(5,107,188,1.00);">Shot suggestion</span>
+									<div class="text1">
+										You don't need to be an expert to take a shot. Use<br/>
+										the ever helpful shot suggestion to take the <b>best shot</b><br/>
+										you need.
+									</div>
 								</div>
 							</div>
 							<br/>
-							<div class="perf">
-								<div>4k HDR and HDR10+ <br/>Recording</div>
-								<div>Various wide angle<br/>Cameras</div>
-							</div>
-							<div class="perfinfo">
-								<div>
-									Record incredible footage with amazing details with<br/>
-									the <b>rich color and contrast</b> of HDR10+ and Dynamic<br/>
-									Tone Mapping. Every frame stays consistent with the next.
+							<div class="row">
+								<div class="col-md-6">
+									<span class="MSC" style="color:rgba(5,107,188,1.00);">4k HDR and HDR10+ Recording</span>
+									<div class="text1">
+										Record incredible footage with amazing details with<br/>
+										the <b>rich color and contrast</b> of HDR10+ and Dynamic<br/>
+										Tone Mapping. Every frame stays consistent with the next.
+									</div>
 								</div>
-								<div>
-									With a wide choice of <b>12 MP telephoto, wide angle</b><br/>
-									<b>and Ultra Wide camera</b>, be sure to catch every angle<br/>
-									of the scene.
+								<div class="col-md-6">
+									<span class="MSC" style="color:rgba(5,107,188,1.00);">Various wide angle cameras</span>
+									<div class="text1">
+										With a wide choice of <b>12 MP telephoto, wide angle</b><br/>
+										<b>and Ultra Wide camera</b>, be sure to catch every angle<br/>
+										of the scene.
+									</div>
 								</div>
 							</div>
 							<br/>
 							<br/>
 							<br/>
 							<br/>
-								<span style="font-size:21px; font-weight:bold">
-									Pop-up Front Facing Camera
-									<img src="img-pearinc/popupcamera.jpg" width="40%" align="right">
-								</span>
-								<div>
-									Sick of notches taking up you screen space?<br/>
-									With a <b>20MP</b> pop-up front facing camera, enjoy <br/>
-									your clean display to the fullest. The camera will<br/>
-									pop-up smoothly when the camera app is open. <br/>
-									<br/>
+							<div class="row">
+								<div class="col-md-6">
+									<span class="MSC" style="color:rgba(5,107,188,1.00);">Pop-up Front Facing Camera</span>
+									<div class="text1">
+										Sick of notches taking up you screen space?<br/>
+										With a <b>20MP</b> pop-up front facing camera, enjoy <br/>
+										your clean display to the fullest. The camera will<br/>
+										pop-up smoothly when the camera app is open. <br/>
+									</div>
 									<br/>
 									<span style="font-size:21px; font-weight:bold"> Highlights</span>
-									<table border="5" align="center">
+									<table border="5" align="center" style="font-size:20px; width:100%">
 										<tr>
-											<td> Emergency drop detection<br/>and protection</td>
-											<td> Downward pressure detection<br/>and protection</td>
+											<td> Emergency drop <br/>detection and protection</td>
+											<td> Downward pressure<br/> detection and protection</td>
 											<td> Tested with 300,000 pop-up<br/> without any break downs</td>
 										</tr>
 									</table>
-									<br/>
-									<br/>
-									<br/>
+								</div>
+								<div class="col-md-6">
+									<img src="img-pearinc/popupcamera.jpg" width="85%" align="right">
+								</div>
+							</div>
+							<br/>
+							<div>
+								<span class="MSC" id="specs">Technical Specifications</span>
+								<div>
+									
 								</div>
 							</div>
 						</div>
@@ -248,7 +300,7 @@
 			</main>
     		
 
-            <footer class="footer-section">
+            <footer class="footer-section" style="clear: both">
                 <div class="row">
                     <div class="col-md-3">
                         <a href="PearInc.html"><img src="../pearinc/img-pearinc/pear-logo.png" alt="logo" width="15%"/></a>
