@@ -10,14 +10,12 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 		<meta charset="UTF-8">
-		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+		
 	</head>
 
 	<body>
 		<div class="global-container">
+			<!--Nav Bar-->
 			<header class="header-section">
                 <div class="header-wrap">
                     <div class="header-logo">
@@ -34,12 +32,18 @@
                         </label>
                         <nav>
                             <ul>
-                                <li><a href="pearbook.html">PearBook</a></li>
+                                <li><a class="is-active" href="pearbook.html">PearBook</a></li>
                                 <li><a href="pearnote.html">PearNote</a></li>
                                 <li><a href="pearphone.html">PearPhone</a></li>
                                 <li><a href="accessories.html">Accessories</a></li>
                                 <li><a href="support.html">Support</a></li>
-                                <li><a href="bag.html">Bag</a></li>
+                                <li><a href="bag.html">
+										<svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" d="M14 5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5zM1 4v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4H1z"/>
+											<path d="M8 1.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+										</svg>
+									</a>
+								</li>
                             </ul>
     
                             <ul>
@@ -51,112 +55,167 @@
             </header>
 			
 			<div class="container">
-				<div class="PBbackground">
-					<div class="container">
-    
-					  <div id="Carousel" class="carousel slide" data-ride="carousel">
-						<!-- Indicators -->
-						<ol class="carousel-indicators">
-						  <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-						  <li data-target="#Carousel" data-slide-to="1"></li>
-						  <li data-target="#Carousel" data-slide-to="2"></li>
-						</ol>
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+						  <div class="numbertext">1 / 3</div>
+						  <img src="img-pearinc/PearBookHomeFinal.JPG" style="width:100%" alt="PearBook" />
+						  <div class="text">					 
+							  <div  class="TSC" >
 
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner">
-						  <div class="item active">
-							<img src="img-pearinc/PearBookHomeFinal.JPG" alt="Los Angeles" style="width:100%;">
-						  </div>
-
-						  <div class="item">
-							<img src="img-pearinc/PearphoneHome.png" alt="Chicago" style="width:100%;">
-						  </div>
-
-						  <div class="item">
-							<img src="img-pearinc/PearNoteHome.png" alt="New york" style="width:100%;">
-						  </div>
+								  <div>
+									  	
+										<a href="pearbook.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px; 		">Learn more &gt;</a>
+									</div> 
+								  <div>
+									  	
+										<a href="pearbookColour.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px;">Buy &gt;</a>
+									</div> 
+								</div>
+							</div>
 						</div>
 
-						<!-- Left and right controls -->
-						<a class="left carousel-control" href="#Carousel" data-slide="prev">
-						  <span class="glyphicon glyphicon-chevron-left"></span>
-						  <span class="sr-only">Previous</span>
-						</a>
-						<a class="right carousel-control" href="#Carousel" data-slide="next">
-						  <span class="glyphicon glyphicon-chevron-right"></span>
-						  <span class="sr-only">Next</span>
-						</a>
-				  </div>
-				</div>
-					<br/>
-					<br/>
-					<img src="img-pearinc/PearBookHomeFinal.JPG" alt="PearBook" class="center"/>
-					  <div  class="TSC" >
+						<div class="mySlides fade">
+						  <div class="numbertext">2 / 3</div>
+						  <img src="img-pearinc/PearNoteHome.png" style="width:100%" alt="PearNote"/>
+						  <div class="text">
+							<div  class="TSC" >
+
+								  <div>
+									  	
+										<a href="pearnote.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px; 		">Learn more &gt;</a>
+									</div> 
+								  <div>
+									  	
+										<a href="bag.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px;">Buy &gt;</a>
+									</div> 
+								</div>
+							</div>
+						</div>
+
+						<div class="mySlides fade">
+						  <div class="numbertext">3 / 3</div>
+						  <img src="img-pearinc/PearphoneHome.png" style="width:100%" alt="PearPhone"/>
+									
+						  <div class="text">
+								<div  class="TSC" >
+
+									  <div>
+
+											<a href="pearphone.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px; 		">Learn more &gt;</a>
+										</div> 
+									  <div>
+
+											<a href="bag.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px;">Buy &gt;</a>
+									</div> 
+								</div>
+							</div>
+						</div>
 						
-					  <div>
-						  	<a href="pearbook.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px; 		">Learn more &gt;</a>
-						</div> 
-					  <div>
-							<a href="pearbook purchase.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px;">Buy &gt;</a>
-						</div> 
-					</div>
-					<br/>
-					<br/>
-					<br/>
-					<img src="img-pearinc/PearphoneHome.png" alt="PearPhone" class="center" />
-					<br/>
-					<div  class="TSC" >
-						
-					  <div>
-						  	<a href="pearphone.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px; 		">Learn more &gt;</a>
-						</div> 
-					  <div>
-							<a href="bag.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px;">Buy &gt;</a>
-						</div> 
-					</div>
-					<br/>
-					<br/>
-					<br/>
+
+						</div>
+						<br>
+
+						<div style="text-align:center">
+						  <span class="dot"></span> 
+						  <span class="dot"></span> 
+						  <span class="dot"></span> 
+						</div>
+
+						<script>
+							var slideIndex = 0;
+							showSlides();
+							
+							function showSlides() {
+							  var i;
+							  var slides = document.getElementsByClassName("mySlides");
+							  var dots = document.getElementsByClassName("dot");
+							  for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";  
+							  }
+							  slideIndex++;
+							  if (slideIndex > slides.length) {slideIndex = 1}    
+							  for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							  }
+							  slides[slideIndex-1].style.display = "block";  
+							  dots[slideIndex-1].className += " active";
+							  setTimeout(showSlides, 5000); // Change image every 5 seconds
+							}
+						</script>
                 </div>
-                
+                <div class="container" >
+					<div class="row">
+						<div class="col-md-6">
+							<img src="img-pearinc/PearPodsfinal.png" alt="Peadpods" class="PearBookImage2"/> 
+							<div  class="TSC" >
+
+									  <div>
+
+											<a href="accessories.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px; 		">Learn more &gt;</a>
+										</div> 
+									  <div>
+
+											<a href="bag.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px;">Buy &gt;</a>
+									</div> 
+								</div>
+						</div>
+						<div class="col-md-6">
+							<img src="img-pearinc/PearPen.png" alt="PeadPen" class="PearBookImage3"/>
+							<div  class="TSC" >
+
+									  <div>
+
+											<a href="accessories.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px; 		">Learn more &gt;</a>
+										</div> 
+									  <div>
+
+											<a href="bag.html" style="color:#FFFFFF; background-color:rgba(5,107,188,1.00);padding: 5px;border-radius:10px;">Buy &gt;</a>
+									</div> 
+								</div>
+						</div>
+					</div>
+					<br/>
+					<br/>
+                    <br/>
+                    
                 <div class="donation">
                     <div class="donation-wrapper">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h1 class="MSC">Our Donation</h1>
+                            <div class="col-md-6 donation-content">
+                                <h1 class="donation-header">Our Donation</h1>
 
                                 <p>
                                     Every year, Pear inc will donate a portion of our
                                     revenue to credible charities that have contributed
-                                   to making the world a better place. Just this year,
-                                   Pear inc has donated 10 million USD to charities 
-                                   such as WWF, Rainforest Alliance and many more.
-                                   For every Pear product you have purchased from 
-                                   us ,  we will donate a portion of the profits to A 
-                                   charity of your choosing or to save the  
-                                   environment. <br/><br/>
+                                    to making the world a better place. Just this year,
+                                    Pear inc has donated 10 million USD to charities 
+                                    such as WWF, Rainforest Alliance and many more.
+                                    For every Pear product you have purchased from 
+                                    us ,  we will donate a portion of the profits to A 
+                                    charity of your choosing or to save the  
+                                    environment. <br/><br/>
                                    
-                                   <a href="support.html">Donate Now ></a>
+                                   <a class="donatenow" href="support.html">Donate Now &gt; </a>
                                 </p>
                             </div>
 
                             <div class="col-md-6">
-                                <img src="img-pearinc/graph1.png" alt="graph1" width="100%"/>
+                                <img class="graph1" src="img-pearinc/graph1.png" alt="graph1" width="100%"/>
                             </div>
                         </div>
 
                         <div class="row">
 
                             <div class="col-md-6">
-                                <embed src="img-pearinc/List_of_donaters.pdf" width="100%" height="200px">
+                                <embed class="doners" src="img-pearinc/List_of_donaters.pdf" width="100%" height="200px">
                             </div>
 
                             <div class="col-md-3">
-                                <a href="https://www.worldwildlife.org/" target="_blank"><img src="img-pearinc/wwf.jpeg" alt="" width="100%"/></a>
+                                <a class="logo" href="https://www.worldwildlife.org/" target="_blank"><img src="img-pearinc/wwf.jpeg" alt="" width="100%"/></a>
                             </div>
 
                             <div class="col-md-3">
-                                <a href="https://www.unenvironment.org/" target="_blank"><img src="img-pearinc/une.png" alt="" width="65%"/></a>
+                                <a class="logo" href="https://www.unenvironment.org/" target="_blank"><img src="img-pearinc/une.png" alt="" width="65%"/></a>
                             </div>
                         </div>
                     </div>
@@ -165,27 +224,23 @@
                 <div class="trees">
                     <div class="trees-wrapper">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h1 class="MSC">Planting Trees</h1>
+                            <div class="col-md-6 trees-content">
+                                <h1 class="trees-header">Planting Trees</h1>
 
-                                <p class="SSC">
+                                <p>
                                     We have made a promise that we will plant 10 trees for every purchase 
                                     of our Pear products. At Pear.Inc, we believe that we must give back to 
-                                    the environment after all we had done to it. 10 trees might seem to be 
-                                    a small amount, however, through constant effort and accumulation, 
-                                    we hope to reach the goal of planting 20 million trees worldwide. With
-                                    just a simple click, you will be able to make a difference to the world. 
+                                    the environment after all we had done to it.
+                                    We hope to reach the goal of planting 20 million trees worldwide. With
+                                    a simple click, you can make a difference to the world. 
                                     According to research, 1 tree can produce about 260 pounds of clean 
                                     oxygen each year, having 20 million of that will definitely help humans 
-                                    to filter out the huge amount of dirty air, benefiting not only you but 
-                                    every living thing on Earth.<br/><br/>
-
-                                    <b>We have planted 1125069 trees. Thanks to you :D</b> 
+                                    to filter out the huge amount of dirty air, benefiting everyone of us<b class="planted"> We have planted 1125069 trees. Thanks to you :D</b> 
                                  </p>
                             </div>
 
                             <div class="col-md-6">
-                                <a href=""><img src="img-pearinc/treess.jpg" alt="treess" width="100%"/></a>
+                                <a class="treess" href=""><img src="img-pearinc/treess.jpg" alt="treess" width="100%"/></a>
                             </div>
                         </div>
 

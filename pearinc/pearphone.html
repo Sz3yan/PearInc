@@ -3,18 +3,18 @@
     <head>
         <meta name="author" content="elton">
         <meta name="viewport" content="width:device-width, initial-scale:1.0">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>PearPhone</title>
         <link rel="stylesheet" href="css-pearinc/pearphone-style.css">
         <link rel="stylesheet" href="css-pearinc/standard.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <meta charset="UTF-8">
         <style>
-            a {
-                color:black;
-            }
+			.header-nav a {
+				font-weight: 400;
+				text-decoration: none;
+				color: black;
+			}
         </style>
     </head>
 	
@@ -23,10 +23,16 @@
             <header class="header-section">
                 <div class="header-wrap">
                     <div class="header-logo">
-                        <h1 class="is-logo"><a href="PearInc.html"><img src="../pearinc/img-pearinc/pear-logo.png" alt="Pear Logo" width="35%"></a></h1>
+                        <h1 class="is-logo">
+                            <a href="PearInc.html">
+                                <img src="../pearinc/img-pearinc/pear-logo.png" alt="Pear Logo" width="35%"/>
+                            </a>
+                        </h1>
                     </div>
+
                     <div class="header-nav">
-                        <input class="header-checkbox" id="toggle" type="checkbox">
+                        <input class="header-checkbox" id="toggle" type="checkbox"/>
+
                         <label class="header-toggle" for="toggle">
                             <span>
                                 <span class="bar"></span>
@@ -34,13 +40,14 @@
                                 <span class="bar"></span>
                             </span>
                         </label>
+
                         <nav>
                             <ul>
                                 <li><a href="pearbook.html">PearBook</a></li>
                                 <li><a href="pearnote.html">PearNote</a></li>
-                                <li><a href="pearphone.html">PearPhone</a></li>
+                                <li><a class="is-active" href="pearphone.html">PearPhone</a></li>
                                 <li><a href="accessories.html">Accessories</a></li>
-                                <li><a class="is-active" href="support.html">Support</a></li>
+                                <li><a href="support.html">Support</a></li>
                                 <li>
                                     <a href="bag.html">
                                         <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-bag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -54,6 +61,7 @@
                             <ul>
                                 <li id="search-open" class="header-search">
                                     <span>Search</span>
+
                                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M19.063 16.384l4.325 4.323c.391.392.63.924.611 1.475-.032.926-.646 1.649-1.68 1.736-.551.046-1.086-.22-1.476-.61l-4.325-4.325c-1.706 1.131-4.034 1.895-6.08 1.893C4.673 20.875 0 16.202 0 10.438 0 4.673 4.673 0 10.438 0c5.764 0 10.437 4.673 10.437 10.438 0 2.127-.718 4.294-1.812 5.945v.001zm-8.625 1.032c3.839 0 6.997-3.161 6.997-7 0-3.84-3.16-7-6.999-7-3.84 0-7.001 3.16-7.001 7 0 3.839 3.161 6.998 7.001 6.998l.002.002z"/>
                                     </svg>
