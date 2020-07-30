@@ -1,50 +1,36 @@
 body{
 	overflow-x: hidden;
-	color: black;
-	background-image: url("../img-pearinc/pearnote.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position-y: 150px;
+}
+.pearnote{
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-align: centre;
 }
 
-/* header product name font class*/
+.imagecenter{
+	text-align: center;
+}
+
+
+/*Header product name*/
 .alpha {
 	font-size: 70px;
-	color: black;
+	text-align: center;
 }
 
-/*slogan first line size */
+/*Below product name*/
 .beta {
-	font-size: 20px;
-	color: black;
+	font-size: 40px;
+	text-align: center;
 }
 
-/*slogan second line size */
+/*Main slogan title*/
 .charlie {
-	font-size: 30px;
+	font-size: 40px;
+	text-align: center;
 }
 
+/*Main slogan paragraph*/
 .delta {
-	color: black;
-	position: relative;
-}
-
-/*pearnote alignment class*/
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 75%;
-	height:75%;
-}
-
-table, th, td {
-	width: 75%;
-	border: 1px solid black;
-	border-collapse: collapse;
-	table-layout: fixed;
-}
-
-th, td {
-	padding: 15px;
+	font-size: 30px;
+	text-align: center;
 }

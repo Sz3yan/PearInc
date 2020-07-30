@@ -1,40 +1,36 @@
 body{
 	overflow-x: hidden;
-	color: black;
-	background-image: url("../img-pearinc/accessories.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position-y: 150px;
 }
 
-.alpha{
+.accessories{
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	text-align: centre;
+}
+
+/*Header product name*/
+.alpha {
 	font-size: 70px;
-	color: black;
-}
-
-.beta{
-	font-size: 20px;
-	color: black;
-}
-
-.charlie{
-		font-size: 30px;
-}
-
-.delta{
-}
-
-.center{
-}
-
-table, th, td {
-	width: 75%;
-	border: 1px solid black;
-	border-collapse: collapse;
 	text-align: center;
-	table-layout: fixed;
 }
 
-th, td {
-	padding: 15px;
+/*Below product name*/
+.beta {
+	font-size: 40px;
+	text-align: center;
+}
+
+/*Main slogan title*/
+.charlie {
+	font-size: 40px;
+	text-align: center;
+}
+
+/*Main slogan paragraph*/
+.delta {
+	font-size: 30px;
+	text-align: center;
+}
+
+.imagecenter{
+	text-align: center;
 }
