@@ -47,6 +47,26 @@
             </header>
 			
 			<div class="container">
+				<button onclick="topFunction()" id="GBTT" > back to top</button>
+					<script>
+						
+						var mybutton = document.getElementById("GBTT");
+						window.onscroll = function() {scrollFunction()};
+
+						function scrollFunction() {
+							if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    						mybutton.style.display = "block";
+							}	 	
+							else {
+    						mybutton.style.display = "none";
+  							}
+						}
+
+						function topFunction() {
+						  document.body.scrollTop = 0;
+						  document.documentElement.scrollTop = 0;
+						}
+					</script>
 				<div class="accessories">
 					<h1 class="alpha">Accessories</h1>
 					<p class="beta">Makes your life easier</p>
