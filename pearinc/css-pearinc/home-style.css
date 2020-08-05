@@ -1,12 +1,4 @@
-body {
-  overflow: scroll;
-  color: black;
-}
 
-li {
-  display: inline;
-  color:black
-}    
 
 .center {
   display: block;
