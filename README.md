@@ -1,6 +1,6 @@
 # PearInc
 Webpublishing Group 3 
 
-Download all files when updated 
+NYP PFP
 
 Done by: Sze Yan, Eden, Elton and Soloman
